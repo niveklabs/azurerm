@@ -19,6 +19,7 @@ module "azurerm_windows_virtual_machine_scale_set" {
   provision_vm_agent                                = null
   proximity_placement_group_id                      = null
   resource_group_name                               = null
+  scale_in_policy                                   = null
   single_placement_group                            = null
   sku                                               = null
   source_image_id                                   = null
@@ -127,6 +128,11 @@ module "azurerm_windows_virtual_machine_scale_set" {
     publisher = null
     sku       = null
     version   = null
+  }]
+
+  terminate_notification = [{
+    enabled = null
+    timeout = null
   }]
 
   timeouts = [{

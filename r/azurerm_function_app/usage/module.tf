@@ -4,6 +4,7 @@ module "azurerm_function_app" {
   app_service_plan_id       = null
   app_settings              = {}
   client_affinity_enabled   = null
+  daily_memory_time_quota   = null
   enable_builtin_logging    = null
   enabled                   = null
   https_only                = null

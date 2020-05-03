@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.1.0"
+    azurerm = ">= 2.2.0"
   }
 }
 
@@ -23,6 +23,16 @@ resource "azurerm_sql_database" "this" {
   source_database_id               = var.source_database_id
   tags                             = var.tags
   zone_redundant                   = var.zone_redundant
+
+  dynamic "extended_auditing_policy" {
+    for_each = var.extended_auditing_policy
+    content {
+      retention_in_days                       = extended_auditing_policy.value["retention_in_days"]
+      storage_account_access_key              = extended_auditing_policy.value["storage_account_access_key"]
+      storage_account_access_key_is_secondary = extended_auditing_policy.value["storage_account_access_key_is_secondary"]
+      storage_endpoint                        = extended_auditing_policy.value["storage_endpoint"]
+    }
+  }
 
   dynamic "import" {
     for_each = var.import

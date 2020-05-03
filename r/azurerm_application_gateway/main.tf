@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.1.0"
+    azurerm = ">= 2.2.0"
   }
 }
 
@@ -240,9 +240,10 @@ resource "azurerm_application_gateway" "this" {
   dynamic "ssl_certificate" {
     for_each = var.ssl_certificate
     content {
-      data     = ssl_certificate.value["data"]
-      name     = ssl_certificate.value["name"]
-      password = ssl_certificate.value["password"]
+      data                = ssl_certificate.value["data"]
+      key_vault_secret_id = ssl_certificate.value["key_vault_secret_id"]
+      name                = ssl_certificate.value["name"]
+      password            = ssl_certificate.value["password"]
     }
   }
 

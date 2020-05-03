@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.1.0"
+    azurerm = ">= 2.2.0"
   }
 }
 
@@ -23,6 +23,7 @@ resource "azurerm_windows_virtual_machine_scale_set" "this" {
   provision_vm_agent                                = var.provision_vm_agent
   proximity_placement_group_id                      = var.proximity_placement_group_id
   resource_group_name                               = var.resource_group_name
+  scale_in_policy                                   = var.scale_in_policy
   single_placement_group                            = var.single_placement_group
   sku                                               = var.sku
   source_image_id                                   = var.source_image_id
@@ -190,6 +191,14 @@ resource "azurerm_windows_virtual_machine_scale_set" "this" {
       publisher = source_image_reference.value["publisher"]
       sku       = source_image_reference.value["sku"]
       version   = source_image_reference.value["version"]
+    }
+  }
+
+  dynamic "terminate_notification" {
+    for_each = var.terminate_notification
+    content {
+      enabled = terminate_notification.value["enabled"]
+      timeout = terminate_notification.value["timeout"]
     }
   }
 

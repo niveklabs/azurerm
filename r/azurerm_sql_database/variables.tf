@@ -102,6 +102,19 @@ variable "zone_redundant" {
   default     = null
 }
 
+variable "extended_auditing_policy" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      retention_in_days                       = number
+      storage_account_access_key              = string
+      storage_account_access_key_is_secondary = bool
+      storage_endpoint                        = string
+    }
+  ))
+  default = []
+}
+
 variable "import" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

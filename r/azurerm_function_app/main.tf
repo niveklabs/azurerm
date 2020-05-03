@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.1.0"
+    azurerm = ">= 2.2.0"
   }
 }
 
@@ -8,6 +8,7 @@ resource "azurerm_function_app" "this" {
   app_service_plan_id       = var.app_service_plan_id
   app_settings              = var.app_settings
   client_affinity_enabled   = var.client_affinity_enabled
+  daily_memory_time_quota   = var.daily_memory_time_quota
   enable_builtin_logging    = var.enable_builtin_logging
   enabled                   = var.enabled
   https_only                = var.https_only

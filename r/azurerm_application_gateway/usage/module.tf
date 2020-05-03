@@ -177,11 +177,12 @@ module "azurerm_application_gateway" {
   }]
 
   ssl_certificate = [{
-    data             = null
-    id               = null
-    name             = null
-    password         = null
-    public_cert_data = null
+    data                = null
+    id                  = null
+    key_vault_secret_id = null
+    name                = null
+    password            = null
+    public_cert_data    = null
   }]
 
   ssl_policy = [{

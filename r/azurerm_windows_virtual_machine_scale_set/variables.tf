@@ -100,6 +100,12 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "scale_in_policy" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "single_placement_group" {
   description = "(optional)"
   type        = bool
@@ -323,6 +329,17 @@ variable "source_image_reference" {
       publisher = string
       sku       = string
       version   = string
+    }
+  ))
+  default = []
+}
+
+variable "terminate_notification" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      enabled = bool
+      timeout = string
     }
   ))
   default = []

@@ -301,11 +301,12 @@ variable "ssl_certificate" {
   description = "nested mode: NestingList, min items: 0, max items: 0"
   type = set(object(
     {
-      data             = string
-      id               = string
-      name             = string
-      password         = string
-      public_cert_data = string
+      data                = string
+      id                  = string
+      key_vault_secret_id = string
+      name                = string
+      password            = string
+      public_cert_data    = string
     }
   ))
   default = []

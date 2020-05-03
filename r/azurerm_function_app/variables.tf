@@ -15,6 +15,12 @@ variable "client_affinity_enabled" {
   default     = null
 }
 
+variable "daily_memory_time_quota" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
 variable "enable_builtin_logging" {
   description = "(optional)"
   type        = bool

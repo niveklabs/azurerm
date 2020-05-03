@@ -20,6 +20,13 @@ module "azurerm_sql_database" {
   tags                             = {}
   zone_redundant                   = null
 
+  extended_auditing_policy = [{
+    retention_in_days                       = null
+    storage_account_access_key              = null
+    storage_account_access_key_is_secondary = null
+    storage_endpoint                        = null
+  }]
+
   import = [{
     administrator_login          = null
     administrator_login_password = null
