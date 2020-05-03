@@ -1,10 +1,11 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.7.0"
+    azurerm = ">= 2.8.0"
   }
 }
 
 resource "azurerm_frontdoor" "this" {
+  backend_pools_send_receive_timeout_seconds   = var.backend_pools_send_receive_timeout_seconds
   enforce_backend_pools_certificate_name_check = var.enforce_backend_pools_certificate_name_check
   friendly_name                                = var.friendly_name
   load_balancer_enabled                        = var.load_balancer_enabled

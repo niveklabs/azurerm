@@ -88,6 +88,7 @@ module "azurerm_application_gateway" {
     frontend_port_id               = null
     frontend_port_name             = null
     host_name                      = null
+    host_names                     = []
     id                             = null
     name                           = null
     protocol                       = null

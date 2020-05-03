@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.7.0"
+    azurerm = ">= 2.8.0"
   }
 }
 
@@ -18,6 +18,8 @@ resource "azurerm_express_route_circuit_peering" "this" {
     for_each = var.microsoft_peering_config
     content {
       advertised_public_prefixes = microsoft_peering_config.value["advertised_public_prefixes"]
+      customer_asn               = microsoft_peering_config.value["customer_asn"]
+      routing_registry_name      = microsoft_peering_config.value["routing_registry_name"]
     }
   }
 

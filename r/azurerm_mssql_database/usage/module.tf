@@ -19,6 +19,13 @@ module "azurerm_mssql_database" {
   tags                        = {}
   zone_redundant              = null
 
+  extended_auditing_policy = [{
+    retention_in_days                       = null
+    storage_account_access_key              = null
+    storage_account_access_key_is_secondary = null
+    storage_endpoint                        = null
+  }]
+
   threat_detection_policy = [{
     disabled_alerts            = []
     email_account_admins       = null

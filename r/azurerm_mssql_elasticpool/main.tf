@@ -1,10 +1,11 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.7.0"
+    azurerm = ">= 2.8.0"
   }
 }
 
 resource "azurerm_mssql_elasticpool" "this" {
+  license_type        = var.license_type
   location            = var.location
   max_size_bytes      = var.max_size_bytes
   max_size_gb         = var.max_size_gb

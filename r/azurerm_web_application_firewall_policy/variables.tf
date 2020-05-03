@@ -45,6 +45,33 @@ variable "custom_rules" {
   default = []
 }
 
+variable "managed_rules" {
+  description = "nested mode: NestingList, min items: 1, max items: 1"
+  type = set(object(
+    {
+      exclusion = list(object(
+        {
+          match_variable          = string
+          selector                = string
+          selector_match_operator = string
+        }
+      ))
+      managed_rule_set = list(object(
+        {
+          rule_group_override = list(object(
+            {
+              disabled_rules  = list(string)
+              rule_group_name = string
+            }
+          ))
+          type    = string
+          version = string
+        }
+      ))
+    }
+  ))
+}
+
 variable "policy_settings" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

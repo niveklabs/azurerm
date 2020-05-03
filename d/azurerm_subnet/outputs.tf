@@ -3,6 +3,11 @@ output "address_prefix" {
   value       = data.azurerm_subnet.this.address_prefix
 }
 
+output "address_prefixes" {
+  description = "returns a list of string"
+  value       = data.azurerm_subnet.this.address_prefixes
+}
+
 output "enforce_private_link_endpoint_network_policies" {
   description = "returns a bool"
   value       = data.azurerm_subnet.this.enforce_private_link_endpoint_network_policies

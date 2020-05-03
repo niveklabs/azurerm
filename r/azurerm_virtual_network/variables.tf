@@ -24,6 +24,19 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "subnet" {
+  description = "(optional)"
+  type = set(object(
+    {
+      address_prefix = string
+      id             = string
+      name           = string
+      security_group = string
+    }
+  ))
+  default = null
+}
+
 variable "tags" {
   description = "(optional)"
   type        = map(string)
@@ -36,19 +49,6 @@ variable "ddos_protection_plan" {
     {
       enable = bool
       id     = string
-    }
-  ))
-  default = []
-}
-
-variable "subnet" {
-  description = "nested mode: NestingSet, min items: 0, max items: 0"
-  type = set(object(
-    {
-      address_prefix = string
-      id             = string
-      name           = string
-      security_group = string
     }
   ))
   default = []

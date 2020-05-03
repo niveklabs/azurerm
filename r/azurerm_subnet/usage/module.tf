@@ -2,6 +2,7 @@ module "azurerm_subnet" {
   source = "./modules/azurerm/r/azurerm_subnet"
 
   address_prefix                                 = null
+  address_prefixes                               = []
   enforce_private_link_endpoint_network_policies = null
   enforce_private_link_service_network_policies  = null
   name                                           = null

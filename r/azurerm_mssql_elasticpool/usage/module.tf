@@ -1,6 +1,7 @@
 module "azurerm_mssql_elasticpool" {
   source = "./modules/azurerm/r/azurerm_mssql_elasticpool"
 
+  license_type        = null
   location            = null
   max_size_bytes      = null
   max_size_gb         = null

@@ -3,6 +3,11 @@ output "id" {
   value       = data.azurerm_mssql_elasticpool.this.id
 }
 
+output "license_type" {
+  description = "returns a string"
+  value       = data.azurerm_mssql_elasticpool.this.license_type
+}
+
 output "location" {
   description = "returns a string"
   value       = data.azurerm_mssql_elasticpool.this.location

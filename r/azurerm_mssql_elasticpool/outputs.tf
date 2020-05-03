@@ -3,6 +3,11 @@ output "id" {
   value       = azurerm_mssql_elasticpool.this.id
 }
 
+output "license_type" {
+  description = "returns a string"
+  value       = azurerm_mssql_elasticpool.this.license_type
+}
+
 output "max_size_bytes" {
   description = "returns a number"
   value       = azurerm_mssql_elasticpool.this.max_size_bytes

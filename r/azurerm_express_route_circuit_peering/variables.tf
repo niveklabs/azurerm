@@ -45,6 +45,8 @@ variable "microsoft_peering_config" {
   type = set(object(
     {
       advertised_public_prefixes = list(string)
+      customer_asn               = number
+      routing_registry_name      = string
     }
   ))
   default = []

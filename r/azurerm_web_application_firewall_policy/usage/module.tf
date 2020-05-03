@@ -22,6 +22,22 @@ module "azurerm_web_application_firewall_policy" {
     rule_type = null
   }]
 
+  managed_rules = [{
+    exclusion = [{
+      match_variable          = null
+      selector                = null
+      selector_match_operator = null
+    }]
+    managed_rule_set = [{
+      rule_group_override = [{
+        disabled_rules  = []
+        rule_group_name = null
+      }]
+      type    = null
+      version = null
+    }]
+  }]
+
   policy_settings = [{
     enabled = null
     mode    = null

@@ -1,3 +1,9 @@
+variable "license_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "location" {
   description = "(required)"
   type        = string

@@ -1,11 +1,12 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.7.0"
+    azurerm = ">= 2.8.0"
   }
 }
 
 resource "azurerm_subnet" "this" {
   address_prefix                                 = var.address_prefix
+  address_prefixes                               = var.address_prefixes
   enforce_private_link_endpoint_network_policies = var.enforce_private_link_endpoint_network_policies
   enforce_private_link_service_network_policies  = var.enforce_private_link_service_network_policies
   name                                           = var.name

@@ -1,6 +1,13 @@
 variable "address_prefix" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "address_prefixes" {
+  description = "(optional)"
+  type        = list(string)
+  default     = null
 }
 
 variable "enforce_private_link_endpoint_network_policies" {

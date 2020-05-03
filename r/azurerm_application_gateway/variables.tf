@@ -163,6 +163,7 @@ variable "http_listener" {
       frontend_port_id               = string
       frontend_port_name             = string
       host_name                      = string
+      host_names                     = set(string)
       id                             = string
       name                           = string
       protocol                       = string

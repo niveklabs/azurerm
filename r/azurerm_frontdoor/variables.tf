@@ -1,3 +1,9 @@
+variable "backend_pools_send_receive_timeout_seconds" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
 variable "enforce_backend_pools_certificate_name_check" {
   description = "(required)"
   type        = bool

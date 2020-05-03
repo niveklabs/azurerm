@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.7.0"
+    azurerm = ">= 2.8.0"
   }
 }
 
@@ -111,6 +111,7 @@ resource "azurerm_application_gateway" "this" {
       frontend_ip_configuration_name = http_listener.value["frontend_ip_configuration_name"]
       frontend_port_name             = http_listener.value["frontend_port_name"]
       host_name                      = http_listener.value["host_name"]
+      host_names                     = http_listener.value["host_names"]
       name                           = http_listener.value["name"]
       protocol                       = http_listener.value["protocol"]
       require_sni                    = http_listener.value["require_sni"]

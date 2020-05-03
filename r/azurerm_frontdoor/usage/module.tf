@@ -1,6 +1,7 @@
 module "azurerm_frontdoor" {
   source = "./modules/azurerm/r/azurerm_frontdoor"
 
+  backend_pools_send_receive_timeout_seconds   = null
   enforce_backend_pools_certificate_name_check = null
   friendly_name                                = null
   load_balancer_enabled                        = null

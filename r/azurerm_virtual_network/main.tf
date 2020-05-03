@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.7.0"
+    azurerm = ">= 2.8.0"
   }
 }
 
@@ -10,6 +10,7 @@ resource "azurerm_virtual_network" "this" {
   location            = var.location
   name                = var.name
   resource_group_name = var.resource_group_name
+  subnet              = var.subnet
   tags                = var.tags
 
   dynamic "ddos_protection_plan" {
@@ -17,15 +18,6 @@ resource "azurerm_virtual_network" "this" {
     content {
       enable = ddos_protection_plan.value["enable"]
       id     = ddos_protection_plan.value["id"]
-    }
-  }
-
-  dynamic "subnet" {
-    for_each = var.subnet
-    content {
-      address_prefix = subnet.value["address_prefix"]
-      name           = subnet.value["name"]
-      security_group = subnet.value["security_group"]
     }
   }
 

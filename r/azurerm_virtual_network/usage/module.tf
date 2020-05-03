@@ -6,18 +6,17 @@ module "azurerm_virtual_network" {
   location            = null
   name                = null
   resource_group_name = null
-  tags                = {}
-
-  ddos_protection_plan = [{
-    enable = null
-    id     = null
-  }]
-
   subnet = [{
     address_prefix = null
     id             = null
     name           = null
     security_group = null
+  }]
+  tags = {}
+
+  ddos_protection_plan = [{
+    enable = null
+    id     = null
   }]
 
   timeouts = [{

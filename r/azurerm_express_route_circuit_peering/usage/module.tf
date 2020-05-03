@@ -12,6 +12,8 @@ module "azurerm_express_route_circuit_peering" {
 
   microsoft_peering_config = [{
     advertised_public_prefixes = []
+    customer_asn               = null
+    routing_registry_name      = null
   }]
 
   timeouts = [{
