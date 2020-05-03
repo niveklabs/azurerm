@@ -76,6 +76,7 @@ module "azurerm_kubernetes_cluster" {
     load_balancer_sku = null
     network_plugin    = null
     network_policy    = null
+    outbound_type     = null
     pod_cidr          = null
     service_cidr      = null
   }]

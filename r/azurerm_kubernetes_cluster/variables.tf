@@ -158,6 +158,7 @@ variable "network_profile" {
       load_balancer_sku = string
       network_plugin    = string
       network_policy    = string
+      outbound_type     = string
       pod_cidr          = string
       service_cidr      = string
     }
@@ -184,13 +185,14 @@ variable "role_based_access_control" {
 }
 
 variable "service_principal" {
-  description = "nested mode: NestingList, min items: 1, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       client_id     = string
       client_secret = string
     }
   ))
+  default = []
 }
 
 variable "timeouts" {

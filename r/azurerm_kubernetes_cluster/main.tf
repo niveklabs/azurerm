@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.4.0"
+    azurerm = ">= 2.5.0"
   }
 }
 
@@ -111,6 +111,7 @@ resource "azurerm_kubernetes_cluster" "this" {
       load_balancer_sku  = network_profile.value["load_balancer_sku"]
       network_plugin     = network_profile.value["network_plugin"]
       network_policy     = network_profile.value["network_policy"]
+      outbound_type      = network_profile.value["outbound_type"]
       pod_cidr           = network_profile.value["pod_cidr"]
       service_cidr       = network_profile.value["service_cidr"]
 

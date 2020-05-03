@@ -1,5 +1,5 @@
 provider "azurerm" {
-  version = "2.4.0"
+  version = "2.5.0"
 
   auxiliary_tenant_ids           = []
   client_certificate_password    = null
@@ -19,7 +19,6 @@ provider "azurerm" {
   use_msi                        = null
 
   features {
-
 
     key_vault {
       purge_soft_delete_on_destroy    = null
