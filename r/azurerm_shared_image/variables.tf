@@ -15,6 +15,12 @@ variable "gallery_name" {
   type        = string
 }
 
+variable "hyper_v_generation" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "location" {
   description = "(required)"
   type        = string

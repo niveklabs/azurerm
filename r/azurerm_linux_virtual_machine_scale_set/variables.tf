@@ -163,6 +163,17 @@ variable "admin_ssh_key" {
   default = []
 }
 
+variable "automatic_instance_repair" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      enabled      = bool
+      grace_period = string
+    }
+  ))
+  default = []
+}
+
 variable "automatic_os_upgrade_policy" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

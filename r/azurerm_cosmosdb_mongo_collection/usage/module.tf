@@ -9,6 +9,11 @@ module "azurerm_cosmosdb_mongo_collection" {
   shard_key           = null
   throughput          = null
 
+  index = [{
+    keys   = []
+    unique = null
+  }]
+
   timeouts = [{
     create = null
     delete = null

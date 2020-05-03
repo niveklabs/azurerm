@@ -1,5 +1,5 @@
 provider "azurerm" {
-  version = "2.6.0"
+  version = "2.7.0"
 
   auxiliary_tenant_ids           = []
   client_certificate_password    = null

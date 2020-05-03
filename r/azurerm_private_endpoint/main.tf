@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -9,6 +9,7 @@ resource "azurerm_private_endpoint" "this" {
   name                = var.name
   resource_group_name = var.resource_group_name
   subnet_id           = var.subnet_id
+  tags                = var.tags
 
   dynamic "private_service_connection" {
     for_each = var.private_service_connection

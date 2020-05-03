@@ -18,6 +18,11 @@ output "location" {
   value       = data.azurerm_notification_hub.this.location
 }
 
+output "tags" {
+  description = "returns a map of string"
+  value       = data.azurerm_notification_hub.this.tags
+}
+
 output "this" {
   value = azurerm_notification_hub.this
 }

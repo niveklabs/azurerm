@@ -36,6 +36,11 @@ module "azurerm_linux_virtual_machine_scale_set" {
     username   = null
   }]
 
+  automatic_instance_repair = [{
+    enabled      = null
+    grace_period = null
+  }]
+
   automatic_os_upgrade_policy = [{
     disable_automatic_rollback  = null
     enable_automatic_os_upgrade = null

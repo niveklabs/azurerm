@@ -4,6 +4,7 @@ module "azurerm_shared_image" {
   description           = null
   eula                  = null
   gallery_name          = null
+  hyper_v_generation    = null
   location              = null
   name                  = null
   os_type               = null

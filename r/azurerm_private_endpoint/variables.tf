@@ -18,6 +18,12 @@ variable "subnet_id" {
   type        = string
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "private_service_connection" {
   description = "nested mode: NestingList, min items: 1, max items: 1"
   type = set(object(

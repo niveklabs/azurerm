@@ -37,6 +37,12 @@ variable "node_resource_group" {
   default     = null
 }
 
+variable "private_cluster_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "private_link_enabled" {
   description = "(optional)"
   type        = bool

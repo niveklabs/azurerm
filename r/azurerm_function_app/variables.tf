@@ -60,9 +60,22 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "storage_connection_string" {
-  description = "(required)"
+variable "storage_account_access_key" {
+  description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "storage_account_name" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "storage_connection_string" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 
 variable "tags" {

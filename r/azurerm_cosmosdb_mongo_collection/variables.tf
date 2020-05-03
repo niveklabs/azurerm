@@ -36,6 +36,17 @@ variable "throughput" {
   default     = null
 }
 
+variable "index" {
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  type = set(object(
+    {
+      keys   = set(string)
+      unique = bool
+    }
+  ))
+  default = []
+}
+
 variable "timeouts" {
   description = "nested mode: NestingSingle, min items: 0, max items: 0"
   type = set(object(

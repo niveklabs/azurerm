@@ -33,6 +33,11 @@ output "portal_url" {
   value       = azurerm_api_management.this.portal_url
 }
 
+output "private_ip_addresses" {
+  description = "returns a list of string"
+  value       = azurerm_api_management.this.private_ip_addresses
+}
+
 output "public_ip_addresses" {
   description = "returns a list of string"
   value       = azurerm_api_management.this.public_ip_addresses

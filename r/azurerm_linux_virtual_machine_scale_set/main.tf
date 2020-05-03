@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -43,6 +43,14 @@ resource "azurerm_linux_virtual_machine_scale_set" "this" {
     content {
       public_key = admin_ssh_key.value["public_key"]
       username   = admin_ssh_key.value["username"]
+    }
+  }
+
+  dynamic "automatic_instance_repair" {
+    for_each = var.automatic_instance_repair
+    content {
+      enabled      = automatic_instance_repair.value["enabled"]
+      grace_period = automatic_instance_repair.value["grace_period"]
     }
   }
 

@@ -28,6 +28,11 @@ output "sku" {
   value       = data.azurerm_notification_hub_namespace.this.sku
 }
 
+output "tags" {
+  description = "returns a map of string"
+  value       = data.azurerm_notification_hub_namespace.this.tags
+}
+
 output "this" {
   value = azurerm_notification_hub_namespace.this
 }

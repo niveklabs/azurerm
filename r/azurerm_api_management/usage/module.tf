@@ -8,11 +8,12 @@ module "azurerm_api_management" {
     xml_content = null
     xml_link    = null
   }]
-  publisher_email     = null
-  publisher_name      = null
-  resource_group_name = null
-  sku_name            = null
-  tags                = {}
+  publisher_email      = null
+  publisher_name       = null
+  resource_group_name  = null
+  sku_name             = null
+  tags                 = {}
+  virtual_network_type = null
 
   additional_location = [{
     gateway_regional_url = null
@@ -96,5 +97,9 @@ module "azurerm_api_management" {
     delete = null
     read   = null
     update = null
+  }]
+
+  virtual_network_configuration = [{
+    subnet_id = null
   }]
 }

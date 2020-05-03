@@ -1,19 +1,20 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
 resource "azurerm_mysql_server" "this" {
-  administrator_login          = var.administrator_login
-  administrator_login_password = var.administrator_login_password
-  location                     = var.location
-  name                         = var.name
-  resource_group_name          = var.resource_group_name
-  sku_name                     = var.sku_name
-  ssl_enforcement              = var.ssl_enforcement
-  tags                         = var.tags
-  version                      = var.version
+  administrator_login           = var.administrator_login
+  administrator_login_password  = var.administrator_login_password
+  location                      = var.location
+  name                          = var.name
+  public_network_access_enabled = var.public_network_access_enabled
+  resource_group_name           = var.resource_group_name
+  sku_name                      = var.sku_name
+  ssl_enforcement               = var.ssl_enforcement
+  tags                          = var.tags
+  version                       = var.version
 
   dynamic "storage_profile" {
     for_each = var.storage_profile

@@ -5,6 +5,7 @@ module "azurerm_private_endpoint" {
   name                = null
   resource_group_name = null
   subnet_id           = null
+  tags                = {}
 
   private_service_connection = [{
     is_manual_connection           = null

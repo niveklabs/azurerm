@@ -4,8 +4,9 @@ variable "api_management_name" {
 }
 
 variable "enabled" {
-  description = "(required)"
+  description = "(optional)"
   type        = bool
+  default     = null
 }
 
 variable "identifier" {

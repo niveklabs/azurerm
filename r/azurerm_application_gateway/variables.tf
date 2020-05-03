@@ -126,7 +126,7 @@ variable "frontend_ip_configuration" {
 }
 
 variable "frontend_port" {
-  description = "nested mode: NestingList, min items: 1, max items: 0"
+  description = "nested mode: NestingSet, min items: 1, max items: 0"
   type = set(object(
     {
       id   = string
@@ -210,7 +210,7 @@ variable "probe" {
 }
 
 variable "redirect_configuration" {
-  description = "nested mode: NestingList, min items: 0, max items: 0"
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(
     {
       id                   = string
@@ -227,7 +227,7 @@ variable "redirect_configuration" {
 }
 
 variable "request_routing_rule" {
-  description = "nested mode: NestingList, min items: 1, max items: 0"
+  description = "nested mode: NestingSet, min items: 1, max items: 0"
   type = set(object(
     {
       backend_address_pool_id     = string

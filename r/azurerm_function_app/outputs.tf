@@ -33,6 +33,23 @@ output "site_credential" {
   value       = azurerm_function_app.this.site_credential
 }
 
+output "storage_account_access_key" {
+  description = "returns a string"
+  value       = azurerm_function_app.this.storage_account_access_key
+  sensitive   = true
+}
+
+output "storage_account_name" {
+  description = "returns a string"
+  value       = azurerm_function_app.this.storage_account_name
+}
+
+output "storage_connection_string" {
+  description = "returns a string"
+  value       = azurerm_function_app.this.storage_connection_string
+  sensitive   = true
+}
+
 output "this" {
   value = azurerm_function_app.this
 }

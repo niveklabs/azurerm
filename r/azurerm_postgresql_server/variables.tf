@@ -1,11 +1,49 @@
 variable "administrator_login" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
 }
 
 variable "administrator_login_password" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "auto_grow_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
+variable "backup_retention_days" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
+variable "create_mode" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "creation_source_server_id" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "geo_redundant_backup_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
+variable "infrastructure_encryption_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
 }
 
 variable "location" {
@@ -18,9 +56,21 @@ variable "name" {
   type        = string
 }
 
+variable "public_network_access_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "resource_group_name" {
   description = "(required)"
   type        = string
+}
+
+variable "restore_point_in_time" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 
 variable "sku_name" {
@@ -29,8 +79,27 @@ variable "sku_name" {
 }
 
 variable "ssl_enforcement" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "ssl_enforcement_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
+variable "ssl_minimal_tls_version_enforced" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "storage_mb" {
+  description = "(optional)"
+  type        = number
+  default     = null
 }
 
 variable "tags" {
@@ -45,7 +114,7 @@ variable "version" {
 }
 
 variable "storage_profile" {
-  description = "nested mode: NestingList, min items: 1, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       auto_grow             = string
@@ -54,6 +123,7 @@ variable "storage_profile" {
       storage_mb            = number
     }
   ))
+  default = []
 }
 
 variable "timeouts" {

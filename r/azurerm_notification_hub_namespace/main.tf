@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -11,6 +11,7 @@ resource "azurerm_notification_hub_namespace" "this" {
   namespace_type      = var.namespace_type
   resource_group_name = var.resource_group_name
   sku_name            = var.sku_name
+  tags                = var.tags
 
   dynamic "timeouts" {
     for_each = var.timeouts

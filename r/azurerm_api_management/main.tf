@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -14,6 +14,7 @@ resource "azurerm_api_management" "this" {
   resource_group_name       = var.resource_group_name
   sku_name                  = var.sku_name
   tags                      = var.tags
+  virtual_network_type      = var.virtual_network_type
 
   dynamic "additional_location" {
     for_each = var.additional_location
@@ -141,6 +142,13 @@ resource "azurerm_api_management" "this" {
       delete = timeouts.value["delete"]
       read   = timeouts.value["read"]
       update = timeouts.value["update"]
+    }
+  }
+
+  dynamic "virtual_network_configuration" {
+    for_each = var.virtual_network_configuration
+    content {
+      subnet_id = virtual_network_configuration.value["subnet_id"]
     }
   }
 

@@ -75,6 +75,11 @@ output "node_resource_group" {
   value       = data.azurerm_kubernetes_cluster.this.node_resource_group
 }
 
+output "private_cluster_enabled" {
+  description = "returns a bool"
+  value       = data.azurerm_kubernetes_cluster.this.private_cluster_enabled
+}
+
 output "private_fqdn" {
   description = "returns a string"
   value       = data.azurerm_kubernetes_cluster.this.private_fqdn

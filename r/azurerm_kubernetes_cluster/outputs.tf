@@ -45,9 +45,19 @@ output "node_resource_group" {
   value       = azurerm_kubernetes_cluster.this.node_resource_group
 }
 
+output "private_cluster_enabled" {
+  description = "returns a bool"
+  value       = azurerm_kubernetes_cluster.this.private_cluster_enabled
+}
+
 output "private_fqdn" {
   description = "returns a string"
   value       = azurerm_kubernetes_cluster.this.private_fqdn
+}
+
+output "private_link_enabled" {
+  description = "returns a bool"
+  value       = azurerm_kubernetes_cluster.this.private_link_enabled
 }
 
 output "this" {

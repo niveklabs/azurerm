@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -12,6 +12,7 @@ resource "azurerm_kubernetes_cluster" "this" {
   location                        = var.location
   name                            = var.name
   node_resource_group             = var.node_resource_group
+  private_cluster_enabled         = var.private_cluster_enabled
   private_link_enabled            = var.private_link_enabled
   resource_group_name             = var.resource_group_name
   tags                            = var.tags

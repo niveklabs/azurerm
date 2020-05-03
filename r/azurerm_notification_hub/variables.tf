@@ -18,6 +18,12 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "apns_credential" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

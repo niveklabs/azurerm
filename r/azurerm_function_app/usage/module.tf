@@ -1,20 +1,22 @@
 module "azurerm_function_app" {
   source = "./modules/azurerm/r/azurerm_function_app"
 
-  app_service_plan_id       = null
-  app_settings              = {}
-  client_affinity_enabled   = null
-  daily_memory_time_quota   = null
-  enable_builtin_logging    = null
-  enabled                   = null
-  https_only                = null
-  location                  = null
-  name                      = null
-  os_type                   = null
-  resource_group_name       = null
-  storage_connection_string = null
-  tags                      = {}
-  version                   = null
+  app_service_plan_id        = null
+  app_settings               = {}
+  client_affinity_enabled    = null
+  daily_memory_time_quota    = null
+  enable_builtin_logging     = null
+  enabled                    = null
+  https_only                 = null
+  location                   = null
+  name                       = null
+  os_type                    = null
+  resource_group_name        = null
+  storage_account_access_key = null
+  storage_account_name       = null
+  storage_connection_string  = null
+  tags                       = {}
+  version                    = null
 
   auth_settings = [{
     active_directory = [{

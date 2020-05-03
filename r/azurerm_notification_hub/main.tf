@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -9,6 +9,7 @@ resource "azurerm_notification_hub" "this" {
   name                = var.name
   namespace_name      = var.namespace_name
   resource_group_name = var.resource_group_name
+  tags                = var.tags
 
   dynamic "apns_credential" {
     for_each = var.apns_credential

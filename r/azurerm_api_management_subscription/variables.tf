@@ -15,8 +15,9 @@ variable "primary_key" {
 }
 
 variable "product_id" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
 }
 
 variable "resource_group_name" {

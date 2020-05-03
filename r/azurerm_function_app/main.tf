@@ -1,24 +1,26 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
 resource "azurerm_function_app" "this" {
-  app_service_plan_id       = var.app_service_plan_id
-  app_settings              = var.app_settings
-  client_affinity_enabled   = var.client_affinity_enabled
-  daily_memory_time_quota   = var.daily_memory_time_quota
-  enable_builtin_logging    = var.enable_builtin_logging
-  enabled                   = var.enabled
-  https_only                = var.https_only
-  location                  = var.location
-  name                      = var.name
-  os_type                   = var.os_type
-  resource_group_name       = var.resource_group_name
-  storage_connection_string = var.storage_connection_string
-  tags                      = var.tags
-  version                   = var.version
+  app_service_plan_id        = var.app_service_plan_id
+  app_settings               = var.app_settings
+  client_affinity_enabled    = var.client_affinity_enabled
+  daily_memory_time_quota    = var.daily_memory_time_quota
+  enable_builtin_logging     = var.enable_builtin_logging
+  enabled                    = var.enabled
+  https_only                 = var.https_only
+  location                   = var.location
+  name                       = var.name
+  os_type                    = var.os_type
+  resource_group_name        = var.resource_group_name
+  storage_account_access_key = var.storage_account_access_key
+  storage_account_name       = var.storage_account_name
+  storage_connection_string  = var.storage_connection_string
+  tags                       = var.tags
+  version                    = var.version
 
   dynamic "auth_settings" {
     for_each = var.auth_settings

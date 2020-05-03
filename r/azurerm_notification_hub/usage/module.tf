@@ -5,6 +5,7 @@ module "azurerm_notification_hub" {
   name                = null
   namespace_name      = null
   resource_group_name = null
+  tags                = {}
 
   apns_credential = [{
     application_mode = null

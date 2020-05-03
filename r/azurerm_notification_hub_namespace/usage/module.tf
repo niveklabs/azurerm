@@ -7,6 +7,7 @@ module "azurerm_notification_hub_namespace" {
   namespace_type      = null
   resource_group_name = null
   sku_name            = null
+  tags                = {}
 
   timeouts = [{
     create = null

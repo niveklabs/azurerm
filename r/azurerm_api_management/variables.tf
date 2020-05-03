@@ -51,6 +51,12 @@ variable "tags" {
   default     = null
 }
 
+variable "virtual_network_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "additional_location" {
   description = "nested mode: NestingList, min items: 0, max items: 0"
   type = set(object(
@@ -194,6 +200,16 @@ variable "timeouts" {
       delete = string
       read   = string
       update = string
+    }
+  ))
+  default = []
+}
+
+variable "virtual_network_configuration" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      subnet_id = string
     }
   ))
   default = []

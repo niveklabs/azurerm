@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -8,6 +8,7 @@ resource "azurerm_shared_image" "this" {
   description           = var.description
   eula                  = var.eula
   gallery_name          = var.gallery_name
+  hyper_v_generation    = var.hyper_v_generation
   location              = var.location
   name                  = var.name
   os_type               = var.os_type

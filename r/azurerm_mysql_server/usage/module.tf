@@ -1,15 +1,16 @@
 module "azurerm_mysql_server" {
   source = "./modules/azurerm/r/azurerm_mysql_server"
 
-  administrator_login          = null
-  administrator_login_password = null
-  location                     = null
-  name                         = null
-  resource_group_name          = null
-  sku_name                     = null
-  ssl_enforcement              = null
-  tags                         = {}
-  version                      = null
+  administrator_login           = null
+  administrator_login_password  = null
+  location                      = null
+  name                          = null
+  public_network_access_enabled = null
+  resource_group_name           = null
+  sku_name                      = null
+  ssl_enforcement               = null
+  tags                          = {}
+  version                       = null
 
   storage_profile = [{
     auto_grow             = null

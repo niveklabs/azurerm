@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.6.0"
+    azurerm = ">= 2.7.0"
   }
 }
 
@@ -45,6 +45,14 @@ resource "azurerm_windows_virtual_machine_scale_set" "this" {
     content {
       content = additional_unattend_content.value["content"]
       setting = additional_unattend_content.value["setting"]
+    }
+  }
+
+  dynamic "automatic_instance_repair" {
+    for_each = var.automatic_instance_repair
+    content {
+      enabled      = automatic_instance_repair.value["enabled"]
+      grace_period = automatic_instance_repair.value["grace_period"]
     }
   }
 

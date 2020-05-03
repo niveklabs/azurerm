@@ -8,6 +8,11 @@ output "id" {
   value       = data.azurerm_app_service_environment.this.id
 }
 
+output "location" {
+  description = "returns a string"
+  value       = data.azurerm_app_service_environment.this.location
+}
+
 output "pricing_tier" {
   description = "returns a string"
   value       = data.azurerm_app_service_environment.this.pricing_tier

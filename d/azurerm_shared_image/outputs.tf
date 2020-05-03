@@ -8,6 +8,11 @@ output "eula" {
   value       = data.azurerm_shared_image.this.eula
 }
 
+output "hyper_v_generation" {
+  description = "returns a string"
+  value       = data.azurerm_shared_image.this.hyper_v_generation
+}
+
 output "id" {
   description = "returns a string"
   value       = data.azurerm_shared_image.this.id

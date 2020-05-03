@@ -18,6 +18,12 @@ variable "name" {
   type        = string
 }
 
+variable "public_network_access_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "resource_group_name" {
   description = "(required)"
   type        = string

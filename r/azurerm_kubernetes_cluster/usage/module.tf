@@ -8,6 +8,7 @@ module "azurerm_kubernetes_cluster" {
   location                        = null
   name                            = null
   node_resource_group             = null
+  private_cluster_enabled         = null
   private_link_enabled            = null
   resource_group_name             = null
   tags                            = {}
