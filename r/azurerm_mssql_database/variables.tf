@@ -98,6 +98,23 @@ variable "zone_redundant" {
   default     = null
 }
 
+variable "threat_detection_policy" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      disabled_alerts            = set(string)
+      email_account_admins       = string
+      email_addresses            = set(string)
+      retention_days             = number
+      state                      = string
+      storage_account_access_key = string
+      storage_endpoint           = string
+      use_server_default         = string
+    }
+  ))
+  default = []
+}
+
 variable "timeouts" {
   description = "nested mode: NestingSingle, min items: 0, max items: 0"
   type = set(object(

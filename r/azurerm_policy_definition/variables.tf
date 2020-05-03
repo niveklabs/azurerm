@@ -15,6 +15,12 @@ variable "management_group_id" {
   default     = null
 }
 
+variable "management_group_name" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "metadata" {
   description = "(optional)"
   type        = string

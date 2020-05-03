@@ -18,6 +18,11 @@ output "internal_dns_name_label" {
   value       = azurerm_network_interface.this.internal_dns_name_label
 }
 
+output "internal_domain_name_suffix" {
+  description = "returns a string"
+  value       = azurerm_network_interface.this.internal_domain_name_suffix
+}
+
 output "mac_address" {
   description = "returns a string"
   value       = azurerm_network_interface.this.mac_address

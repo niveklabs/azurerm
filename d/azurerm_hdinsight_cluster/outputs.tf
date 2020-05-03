@@ -53,6 +53,11 @@ output "tier" {
   value       = data.azurerm_hdinsight_cluster.this.tier
 }
 
+output "tls_min_version" {
+  description = "returns a string"
+  value       = data.azurerm_hdinsight_cluster.this.tls_min_version
+}
+
 output "this" {
   value = azurerm_hdinsight_cluster.this
 }

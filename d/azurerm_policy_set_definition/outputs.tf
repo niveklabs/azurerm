@@ -1,0 +1,44 @@
+output "description" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.description
+}
+
+output "display_name" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.display_name
+}
+
+output "id" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.id
+}
+
+output "metadata" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.metadata
+}
+
+output "name" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.name
+}
+
+output "parameters" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.parameters
+}
+
+output "policy_definitions" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.policy_definitions
+}
+
+output "policy_type" {
+  description = "returns a string"
+  value       = data.azurerm_policy_set_definition.this.policy_type
+}
+
+output "this" {
+  value = azurerm_policy_set_definition.this
+}
+

@@ -175,6 +175,7 @@ variable "site_config" {
       ))
       linux_fx_version          = string
       min_tls_version           = string
+      pre_warmed_instance_count = number
       use_32_bit_worker_process = bool
       websockets_enabled        = bool
     }

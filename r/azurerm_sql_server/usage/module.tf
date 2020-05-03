@@ -3,6 +3,7 @@ module "azurerm_sql_server" {
 
   administrator_login          = null
   administrator_login_password = null
+  connection_policy            = null
   location                     = null
   name                         = null
   resource_group_name          = null

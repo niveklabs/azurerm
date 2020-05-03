@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.5.0"
+    azurerm = ">= 2.6.0"
   }
 }
 
@@ -106,6 +106,7 @@ resource "azurerm_function_app" "this" {
       ip_restriction            = site_config.value["ip_restriction"]
       linux_fx_version          = site_config.value["linux_fx_version"]
       min_tls_version           = site_config.value["min_tls_version"]
+      pre_warmed_instance_count = site_config.value["pre_warmed_instance_count"]
       use_32_bit_worker_process = site_config.value["use_32_bit_worker_process"]
       websockets_enabled        = site_config.value["websockets_enabled"]
 

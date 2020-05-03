@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.5.0"
+    azurerm = ">= 2.6.0"
   }
 }
 
@@ -11,6 +11,7 @@ resource "azurerm_hdinsight_kafka_cluster" "this" {
   resource_group_name = var.resource_group_name
   tags                = var.tags
   tier                = var.tier
+  tls_min_version     = var.tls_min_version
 
   dynamic "component_version" {
     for_each = var.component_version

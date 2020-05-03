@@ -3,6 +3,11 @@ output "description" {
   value       = data.azurerm_policy_definition.this.description
 }
 
+output "display_name" {
+  description = "returns a string"
+  value       = data.azurerm_policy_definition.this.display_name
+}
+
 output "id" {
   description = "returns a string"
   value       = data.azurerm_policy_definition.this.id

@@ -79,6 +79,7 @@ module "azurerm_function_app" {
     }]
     linux_fx_version          = null
     min_tls_version           = null
+    pre_warmed_instance_count = null
     use_32_bit_worker_process = null
     websockets_enabled        = null
   }]

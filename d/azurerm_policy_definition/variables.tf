@@ -1,9 +1,22 @@
 variable "display_name" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
 }
 
 variable "management_group_id" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "management_group_name" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "name" {
   description = "(optional)"
   type        = string
   default     = null

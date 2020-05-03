@@ -8,6 +8,11 @@ output "dns_servers" {
   value       = data.azurerm_virtual_network.this.dns_servers
 }
 
+output "guid" {
+  description = "returns a string"
+  value       = data.azurerm_virtual_network.this.guid
+}
+
 output "id" {
   description = "returns a string"
   value       = data.azurerm_virtual_network.this.id

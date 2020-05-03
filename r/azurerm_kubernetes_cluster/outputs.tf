@@ -30,6 +30,11 @@ output "kube_config_raw" {
   sensitive   = true
 }
 
+output "kubelet_identity" {
+  description = "returns a list of object"
+  value       = azurerm_kubernetes_cluster.this.kubelet_identity
+}
+
 output "kubernetes_version" {
   description = "returns a string"
   value       = azurerm_kubernetes_cluster.this.kubernetes_version

@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.5.0"
+    azurerm = ">= 2.6.0"
   }
 }
 
@@ -12,6 +12,7 @@ resource "azurerm_hdinsight_ml_services_cluster" "this" {
   rstudio             = var.rstudio
   tags                = var.tags
   tier                = var.tier
+  tls_min_version     = var.tls_min_version
 
   dynamic "gateway" {
     for_each = var.gateway

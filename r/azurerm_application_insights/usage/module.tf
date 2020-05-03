@@ -4,6 +4,7 @@ module "azurerm_application_insights" {
   application_type                      = null
   daily_data_cap_in_gb                  = null
   daily_data_cap_notifications_disabled = null
+  disable_ip_masking                    = null
   location                              = null
   name                                  = null
   resource_group_name                   = null

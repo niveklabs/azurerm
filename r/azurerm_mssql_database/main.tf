@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.5.0"
+    azurerm = ">= 2.6.0"
   }
 }
 
@@ -22,6 +22,20 @@ resource "azurerm_mssql_database" "this" {
   sku_name                    = var.sku_name
   tags                        = var.tags
   zone_redundant              = var.zone_redundant
+
+  dynamic "threat_detection_policy" {
+    for_each = var.threat_detection_policy
+    content {
+      disabled_alerts            = threat_detection_policy.value["disabled_alerts"]
+      email_account_admins       = threat_detection_policy.value["email_account_admins"]
+      email_addresses            = threat_detection_policy.value["email_addresses"]
+      retention_days             = threat_detection_policy.value["retention_days"]
+      state                      = threat_detection_policy.value["state"]
+      storage_account_access_key = threat_detection_policy.value["storage_account_access_key"]
+      storage_endpoint           = threat_detection_policy.value["storage_endpoint"]
+      use_server_default         = threat_detection_policy.value["use_server_default"]
+    }
+  }
 
   dynamic "timeouts" {
     for_each = var.timeouts

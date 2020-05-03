@@ -34,6 +34,12 @@ variable "tier" {
   type        = string
 }
 
+variable "tls_min_version" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "gateway" {
   description = "nested mode: NestingList, min items: 1, max items: 1"
   type = set(object(

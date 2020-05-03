@@ -7,6 +7,7 @@ module "azurerm_hdinsight_kafka_cluster" {
   resource_group_name = null
   tags                = {}
   tier                = null
+  tls_min_version     = null
 
   component_version = [{
     kafka = null

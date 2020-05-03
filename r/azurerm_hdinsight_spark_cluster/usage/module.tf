@@ -7,6 +7,7 @@ module "azurerm_hdinsight_spark_cluster" {
   resource_group_name = null
   tags                = {}
   tier                = null
+  tls_min_version     = null
 
   component_version = [{
     spark = null

@@ -15,6 +15,12 @@ variable "daily_data_cap_notifications_disabled" {
   default     = null
 }
 
+variable "disable_ip_masking" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "location" {
   description = "(required)"
   type        = string

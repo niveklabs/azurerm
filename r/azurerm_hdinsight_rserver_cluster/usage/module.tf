@@ -8,6 +8,7 @@ module "azurerm_hdinsight_rserver_cluster" {
   rstudio             = null
   tags                = {}
   tier                = null
+  tls_min_version     = null
 
   gateway = [{
     enabled  = null

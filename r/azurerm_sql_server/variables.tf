@@ -8,6 +8,12 @@ variable "administrator_login_password" {
   type        = string
 }
 
+variable "connection_policy" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "location" {
   description = "(required)"
   type        = string
