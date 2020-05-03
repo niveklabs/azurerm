@@ -1,5 +1,5 @@
 module "azurerm_public_ip" {
-  source = "./azurerm/r/azurerm_public_ip"
+  source = "./modules/azurerm/r/azurerm_public_ip"
 
   allocation_method       = null
   domain_name_label       = null

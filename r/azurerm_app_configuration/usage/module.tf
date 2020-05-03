@@ -1,5 +1,5 @@
 module "azurerm_app_configuration" {
-  source = "./azurerm/r/azurerm_app_configuration"
+  source = "./modules/azurerm/r/azurerm_app_configuration"
 
   location            = null
   name                = null

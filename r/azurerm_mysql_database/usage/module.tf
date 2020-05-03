@@ -1,5 +1,5 @@
 module "azurerm_mysql_database" {
-  source = "./azurerm/r/azurerm_mysql_database"
+  source = "./modules/azurerm/r/azurerm_mysql_database"
 
   charset             = null
   collation           = null

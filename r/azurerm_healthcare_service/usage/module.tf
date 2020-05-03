@@ -1,5 +1,5 @@
 module "azurerm_healthcare_service" {
-  source = "./azurerm/r/azurerm_healthcare_service"
+  source = "./modules/azurerm/r/azurerm_healthcare_service"
 
   access_policy_object_ids = []
   cosmosdb_throughput      = null

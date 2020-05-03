@@ -1,5 +1,5 @@
 module "azurerm_storage_account_blob_container_sas" {
-  source = "./azurerm/d/azurerm_storage_account_blob_container_sas"
+  source = "./modules/azurerm/d/azurerm_storage_account_blob_container_sas"
 
   cache_control       = null
   connection_string   = null

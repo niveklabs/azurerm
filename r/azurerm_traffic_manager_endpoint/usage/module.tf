@@ -1,5 +1,5 @@
 module "azurerm_traffic_manager_endpoint" {
-  source = "./azurerm/r/azurerm_traffic_manager_endpoint"
+  source = "./modules/azurerm/r/azurerm_traffic_manager_endpoint"
 
   endpoint_location   = null
   endpoint_status     = null

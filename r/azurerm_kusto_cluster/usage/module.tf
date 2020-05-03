@@ -1,10 +1,12 @@
 module "azurerm_kusto_cluster" {
-  source = "./azurerm/r/azurerm_kusto_cluster"
+  source = "./modules/azurerm/r/azurerm_kusto_cluster"
 
-  location            = null
-  name                = null
-  resource_group_name = null
-  tags                = {}
+  enable_disk_encryption  = null
+  enable_streaming_ingest = null
+  location                = null
+  name                    = null
+  resource_group_name     = null
+  tags                    = {}
 
   sku = [{
     capacity = null

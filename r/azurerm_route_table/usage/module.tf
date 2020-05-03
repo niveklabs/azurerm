@@ -1,5 +1,5 @@
 module "azurerm_route_table" {
-  source = "./azurerm/r/azurerm_route_table"
+  source = "./modules/azurerm/r/azurerm_route_table"
 
   disable_bgp_route_propagation = null
   location                      = null

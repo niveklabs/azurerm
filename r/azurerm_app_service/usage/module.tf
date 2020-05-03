@@ -1,5 +1,5 @@
 module "azurerm_app_service" {
-  source = "./azurerm/r/azurerm_app_service"
+  source = "./modules/azurerm/r/azurerm_app_service"
 
   app_service_plan_id     = null
   app_settings            = {}

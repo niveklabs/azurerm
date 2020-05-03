@@ -1,5 +1,5 @@
 module "azurerm_app_service_environment" {
-  source = "./azurerm/r/azurerm_app_service_environment"
+  source = "./modules/azurerm/r/azurerm_app_service_environment"
 
   front_end_scale_factor       = null
   internal_load_balancing_mode = null

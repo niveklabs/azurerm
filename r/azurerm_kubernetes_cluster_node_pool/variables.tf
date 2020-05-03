@@ -50,6 +50,12 @@ variable "node_count" {
   default     = null
 }
 
+variable "node_labels" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "node_taints" {
   description = "(optional)"
   type        = list(string)
@@ -65,6 +71,12 @@ variable "os_disk_size_gb" {
 variable "os_type" {
   description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
   default     = null
 }
 

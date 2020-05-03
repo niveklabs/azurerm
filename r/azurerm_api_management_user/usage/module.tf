@@ -1,5 +1,5 @@
 module "azurerm_api_management_user" {
-  source = "./azurerm/r/azurerm_api_management_user"
+  source = "./modules/azurerm/r/azurerm_api_management_user"
 
   api_management_name = null
   confirmation        = null

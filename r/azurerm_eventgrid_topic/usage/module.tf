@@ -1,5 +1,5 @@
 module "azurerm_eventgrid_topic" {
-  source = "./azurerm/r/azurerm_eventgrid_topic"
+  source = "./modules/azurerm/r/azurerm_eventgrid_topic"
 
   location            = null
   name                = null

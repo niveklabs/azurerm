@@ -16,8 +16,9 @@ variable "load_balancer_enabled" {
 }
 
 variable "location" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
 }
 
 variable "name" {
@@ -63,10 +64,12 @@ variable "backend_pool_health_probe" {
   description = "nested mode: NestingList, min items: 1, max items: 5000"
   type = set(object(
     {
+      enabled             = bool
       id                  = string
       interval_in_seconds = number
       name                = string
       path                = string
+      probe_method        = string
       protocol            = string
     }
   ))

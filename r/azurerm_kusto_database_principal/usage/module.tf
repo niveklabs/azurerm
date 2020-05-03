@@ -1,5 +1,5 @@
 module "azurerm_kusto_database_principal" {
-  source = "./azurerm/r/azurerm_kusto_database_principal"
+  source = "./modules/azurerm/r/azurerm_kusto_database_principal"
 
   client_id           = null
   cluster_name        = null

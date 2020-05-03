@@ -1,5 +1,5 @@
 module "azurerm_batch_certificate" {
-  source = "./azurerm/r/azurerm_batch_certificate"
+  source = "./modules/azurerm/r/azurerm_batch_certificate"
 
   account_name         = null
   certificate          = null

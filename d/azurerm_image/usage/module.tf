@@ -1,5 +1,5 @@
 module "azurerm_image" {
-  source = "./azurerm/d/azurerm_image"
+  source = "./modules/azurerm/d/azurerm_image"
 
   name                = null
   name_regex          = null

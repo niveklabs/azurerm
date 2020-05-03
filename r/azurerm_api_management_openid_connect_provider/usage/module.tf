@@ -1,5 +1,5 @@
 module "azurerm_api_management_openid_connect_provider" {
-  source = "./azurerm/r/azurerm_api_management_openid_connect_provider"
+  source = "./modules/azurerm/r/azurerm_api_management_openid_connect_provider"
 
   api_management_name = null
   client_id           = null

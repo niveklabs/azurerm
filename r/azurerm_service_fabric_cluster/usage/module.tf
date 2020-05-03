@@ -1,5 +1,5 @@
 module "azurerm_service_fabric_cluster" {
-  source = "./azurerm/r/azurerm_service_fabric_cluster"
+  source = "./modules/azurerm/r/azurerm_service_fabric_cluster"
 
   add_on_features      = []
   cluster_code_version = null

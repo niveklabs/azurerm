@@ -1,5 +1,5 @@
 module "azurerm_express_route_circuit_peering" {
-  source = "./azurerm/r/azurerm_express_route_circuit_peering"
+  source = "./modules/azurerm/r/azurerm_express_route_circuit_peering"
 
   express_route_circuit_name    = null
   peer_asn                      = null

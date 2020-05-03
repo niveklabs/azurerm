@@ -1,5 +1,5 @@
 module "azurerm_policy_definition" {
-  source = "./azurerm/r/azurerm_policy_definition"
+  source = "./modules/azurerm/r/azurerm_policy_definition"
 
   description         = null
   display_name        = null

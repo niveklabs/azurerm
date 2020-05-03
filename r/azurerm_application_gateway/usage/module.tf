@@ -1,5 +1,5 @@
 module "azurerm_application_gateway" {
-  source = "./azurerm/r/azurerm_application_gateway"
+  source = "./modules/azurerm/r/azurerm_application_gateway"
 
   enable_http2        = null
   location            = null

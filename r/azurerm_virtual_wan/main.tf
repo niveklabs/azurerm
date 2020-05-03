@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -13,6 +13,7 @@ resource "azurerm_virtual_wan" "this" {
   office365_local_breakout_category = var.office365_local_breakout_category
   resource_group_name               = var.resource_group_name
   tags                              = var.tags
+  type                              = var.type
 
   dynamic "timeouts" {
     for_each = var.timeouts

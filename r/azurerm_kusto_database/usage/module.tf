@@ -1,5 +1,5 @@
 module "azurerm_kusto_database" {
-  source = "./azurerm/r/azurerm_kusto_database"
+  source = "./modules/azurerm/r/azurerm_kusto_database"
 
   cluster_name        = null
   hot_cache_period    = null

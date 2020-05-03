@@ -1,5 +1,5 @@
 module "azurerm_application_insights_analytics_item" {
-  source = "./azurerm/r/azurerm_application_insights_analytics_item"
+  source = "./modules/azurerm/r/azurerm_application_insights_analytics_item"
 
   application_insights_id = null
   content                 = null

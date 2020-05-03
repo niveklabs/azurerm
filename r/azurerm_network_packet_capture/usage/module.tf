@@ -1,5 +1,5 @@
 module "azurerm_network_packet_capture" {
-  source = "./azurerm/r/azurerm_network_packet_capture"
+  source = "./modules/azurerm/r/azurerm_network_packet_capture"
 
   maximum_bytes_per_packet  = null
   maximum_bytes_per_session = null

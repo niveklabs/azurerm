@@ -1,5 +1,5 @@
 module "azurerm_storage_share_directory" {
-  source = "./azurerm/r/azurerm_storage_share_directory"
+  source = "./modules/azurerm/r/azurerm_storage_share_directory"
 
   metadata             = {}
   name                 = null

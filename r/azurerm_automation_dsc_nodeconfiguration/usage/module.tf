@@ -1,5 +1,5 @@
 module "azurerm_automation_dsc_nodeconfiguration" {
-  source = "./azurerm/r/azurerm_automation_dsc_nodeconfiguration"
+  source = "./modules/azurerm/r/azurerm_automation_dsc_nodeconfiguration"
 
   automation_account_name = null
   content_embedded        = null

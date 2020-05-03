@@ -1,5 +1,5 @@
 module "azurerm_point_to_site_vpn_gateway" {
-  source = "./azurerm/r/azurerm_point_to_site_vpn_gateway"
+  source = "./modules/azurerm/r/azurerm_point_to_site_vpn_gateway"
 
   location                    = null
   name                        = null

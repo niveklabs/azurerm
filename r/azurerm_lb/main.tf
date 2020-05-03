@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -17,6 +17,7 @@ resource "azurerm_lb" "this" {
       name                          = frontend_ip_configuration.value["name"]
       private_ip_address            = frontend_ip_configuration.value["private_ip_address"]
       private_ip_address_allocation = frontend_ip_configuration.value["private_ip_address_allocation"]
+      private_ip_address_version    = frontend_ip_configuration.value["private_ip_address_version"]
       public_ip_address_id          = frontend_ip_configuration.value["public_ip_address_id"]
       public_ip_prefix_id           = frontend_ip_configuration.value["public_ip_prefix_id"]
       subnet_id                     = frontend_ip_configuration.value["subnet_id"]

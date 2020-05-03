@@ -1,5 +1,5 @@
 module "azurerm_network_profile" {
-  source = "./azurerm/r/azurerm_network_profile"
+  source = "./modules/azurerm/r/azurerm_network_profile"
 
   location            = null
   name                = null

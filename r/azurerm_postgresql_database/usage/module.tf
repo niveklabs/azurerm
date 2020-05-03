@@ -1,5 +1,5 @@
 module "azurerm_postgresql_database" {
-  source = "./azurerm/r/azurerm_postgresql_database"
+  source = "./modules/azurerm/r/azurerm_postgresql_database"
 
   charset             = null
   collation           = null

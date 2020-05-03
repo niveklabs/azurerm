@@ -1,5 +1,5 @@
 module "azurerm_dashboard" {
-  source = "./azurerm/r/azurerm_dashboard"
+  source = "./modules/azurerm/r/azurerm_dashboard"
 
   dashboard_properties = null
   location             = null

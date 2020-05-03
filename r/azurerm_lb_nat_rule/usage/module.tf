@@ -1,5 +1,5 @@
 module "azurerm_lb_nat_rule" {
-  source = "./azurerm/r/azurerm_lb_nat_rule"
+  source = "./modules/azurerm/r/azurerm_lb_nat_rule"
 
   backend_port                   = null
   enable_floating_ip             = null

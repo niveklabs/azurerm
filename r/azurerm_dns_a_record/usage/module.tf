@@ -1,5 +1,5 @@
 module "azurerm_dns_a_record" {
-  source = "./azurerm/r/azurerm_dns_a_record"
+  source = "./modules/azurerm/r/azurerm_dns_a_record"
 
   name                = null
   records             = []

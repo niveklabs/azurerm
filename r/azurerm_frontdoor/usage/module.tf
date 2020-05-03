@@ -1,5 +1,5 @@
 module "azurerm_frontdoor" {
-  source = "./azurerm/r/azurerm_frontdoor"
+  source = "./modules/azurerm/r/azurerm_frontdoor"
 
   enforce_backend_pools_certificate_name_check = null
   friendly_name                                = null
@@ -26,10 +26,12 @@ module "azurerm_frontdoor" {
   }]
 
   backend_pool_health_probe = [{
+    enabled             = null
     id                  = null
     interval_in_seconds = null
     name                = null
     path                = null
+    probe_method        = null
     protocol            = null
   }]
 

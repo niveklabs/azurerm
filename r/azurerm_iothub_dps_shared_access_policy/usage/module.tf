@@ -1,5 +1,5 @@
 module "azurerm_iothub_dps_shared_access_policy" {
-  source = "./azurerm/r/azurerm_iothub_dps_shared_access_policy"
+  source = "./modules/azurerm/r/azurerm_iothub_dps_shared_access_policy"
 
   enrollment_read     = null
   enrollment_write    = null

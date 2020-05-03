@@ -1,5 +1,5 @@
 module "azurerm_logic_app_trigger_recurrence" {
-  source = "./azurerm/r/azurerm_logic_app_trigger_recurrence"
+  source = "./modules/azurerm/r/azurerm_logic_app_trigger_recurrence"
 
   frequency    = null
   interval     = null

@@ -1,5 +1,5 @@
 module "azurerm_servicebus_queue" {
-  source = "./azurerm/r/azurerm_servicebus_queue"
+  source = "./modules/azurerm/r/azurerm_servicebus_queue"
 
   auto_delete_on_idle                     = null
   dead_lettering_on_message_expiration    = null

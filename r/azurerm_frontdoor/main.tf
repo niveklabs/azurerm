@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -39,9 +39,11 @@ resource "azurerm_frontdoor" "this" {
   dynamic "backend_pool_health_probe" {
     for_each = var.backend_pool_health_probe
     content {
+      enabled             = backend_pool_health_probe.value["enabled"]
       interval_in_seconds = backend_pool_health_probe.value["interval_in_seconds"]
       name                = backend_pool_health_probe.value["name"]
       path                = backend_pool_health_probe.value["path"]
+      probe_method        = backend_pool_health_probe.value["probe_method"]
       protocol            = backend_pool_health_probe.value["protocol"]
     }
   }

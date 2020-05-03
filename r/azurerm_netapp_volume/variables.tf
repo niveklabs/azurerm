@@ -18,6 +18,12 @@ variable "pool_name" {
   type        = string
 }
 
+variable "protocols" {
+  description = "(optional)"
+  type        = set(string)
+  default     = null
+}
+
 variable "resource_group_name" {
   description = "(required)"
   type        = string
@@ -38,22 +44,29 @@ variable "subnet_id" {
   type        = string
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "volume_path" {
   description = "(required)"
   type        = string
 }
 
 variable "export_policy_rule" {
-  description = "nested mode: NestingSet, min items: 0, max items: 5"
+  description = "nested mode: NestingList, min items: 0, max items: 5"
   type = set(object(
     {
-      allowed_clients = set(string)
-      cifs_enabled    = bool
-      nfsv3_enabled   = bool
-      nfsv4_enabled   = bool
-      rule_index      = number
-      unix_read_only  = bool
-      unix_read_write = bool
+      allowed_clients   = set(string)
+      cifs_enabled      = bool
+      nfsv3_enabled     = bool
+      nfsv4_enabled     = bool
+      protocols_enabled = list(string)
+      rule_index        = number
+      unix_read_only    = bool
+      unix_read_write   = bool
     }
   ))
   default = []

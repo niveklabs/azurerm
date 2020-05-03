@@ -1,5 +1,5 @@
 module "azurerm_network_ddos_protection_plan" {
-  source = "./azurerm/r/azurerm_network_ddos_protection_plan"
+  source = "./modules/azurerm/r/azurerm_network_ddos_protection_plan"
 
   location            = null
   name                = null

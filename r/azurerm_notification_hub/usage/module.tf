@@ -1,5 +1,5 @@
 module "azurerm_notification_hub" {
-  source = "./azurerm/r/azurerm_notification_hub"
+  source = "./modules/azurerm/r/azurerm_notification_hub"
 
   location            = null
   name                = null

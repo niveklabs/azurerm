@@ -1,5 +1,5 @@
 module "azurerm_redis_firewall_rule" {
-  source = "./azurerm/r/azurerm_redis_firewall_rule"
+  source = "./modules/azurerm/r/azurerm_redis_firewall_rule"
 
   end_ip              = null
   name                = null

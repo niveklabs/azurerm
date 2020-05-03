@@ -1,5 +1,5 @@
 module "azurerm_virtual_machine" {
-  source = "./azurerm/r/azurerm_virtual_machine"
+  source = "./modules/azurerm/r/azurerm_virtual_machine"
 
   availability_set_id              = null
   delete_data_disks_on_termination = null

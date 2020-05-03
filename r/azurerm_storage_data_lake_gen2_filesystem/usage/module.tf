@@ -1,5 +1,5 @@
 module "azurerm_storage_data_lake_gen2_filesystem" {
-  source = "./azurerm/r/azurerm_storage_data_lake_gen2_filesystem"
+  source = "./modules/azurerm/r/azurerm_storage_data_lake_gen2_filesystem"
 
   name               = null
   properties         = {}

@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_output_blob" {
-  source = "./azurerm/r/azurerm_stream_analytics_output_blob"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_output_blob"
 
   date_format               = null
   name                      = null

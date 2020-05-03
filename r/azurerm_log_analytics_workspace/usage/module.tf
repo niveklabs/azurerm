@@ -1,5 +1,5 @@
 module "azurerm_log_analytics_workspace" {
-  source = "./azurerm/r/azurerm_log_analytics_workspace"
+  source = "./modules/azurerm/r/azurerm_log_analytics_workspace"
 
   location            = null
   name                = null

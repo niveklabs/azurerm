@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_function_javascript_udf" {
-  source = "./azurerm/r/azurerm_stream_analytics_function_javascript_udf"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_function_javascript_udf"
 
   name                      = null
   resource_group_name       = null

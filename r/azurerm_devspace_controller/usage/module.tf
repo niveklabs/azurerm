@@ -1,5 +1,5 @@
 module "azurerm_devspace_controller" {
-  source = "./azurerm/r/azurerm_devspace_controller"
+  source = "./modules/azurerm/r/azurerm_devspace_controller"
 
   location                                 = null
   name                                     = null

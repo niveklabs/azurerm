@@ -1,5 +1,5 @@
 module "azurerm_automation_variable_int" {
-  source = "./azurerm/r/azurerm_automation_variable_int"
+  source = "./modules/azurerm/r/azurerm_automation_variable_int"
 
   automation_account_name = null
   description             = null

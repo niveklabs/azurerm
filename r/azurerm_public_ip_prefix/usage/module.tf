@@ -1,5 +1,5 @@
 module "azurerm_public_ip_prefix" {
-  source = "./azurerm/r/azurerm_public_ip_prefix"
+  source = "./modules/azurerm/r/azurerm_public_ip_prefix"
 
   location            = null
   name                = null

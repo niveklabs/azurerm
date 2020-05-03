@@ -1,8 +1,9 @@
-# Azurerm Provider
+# azurerm Provider
 
-```terraform
+[embedmd]:# (azurerm.tf)
+```tf
 provider "azurerm" {
-  version = "2.0.0"
+  version = "2.1.0"
 
   auxiliary_tenant_ids           = []
   client_certificate_password    = null
@@ -21,17 +22,7 @@ provider "azurerm" {
   tenant_id                      = null
   use_msi                        = null
 
-  features = [{
-    key_vault = [{
-      purge_soft_delete_on_destroy    = null
-      recover_soft_deleted_key_vaults = null
-    }]
-    virtual_machine = [{
-      delete_os_disk_on_deletion = null
-    }]
-    virtual_machine_scale_set = [{
-      roll_instances_when_required = null
-    }]
-  }]
+  features {
+  }
 }
 ```

@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -11,6 +11,7 @@ resource "azurerm_sql_database" "this" {
   elastic_pool_name                = var.elastic_pool_name
   location                         = var.location
   max_size_bytes                   = var.max_size_bytes
+  max_size_gb                      = var.max_size_gb
   name                             = var.name
   read_scale                       = var.read_scale
   requested_service_objective_id   = var.requested_service_objective_id

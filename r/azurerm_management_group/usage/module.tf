@@ -1,5 +1,5 @@
 module "azurerm_management_group" {
-  source = "./azurerm/r/azurerm_management_group"
+  source = "./modules/azurerm/r/azurerm_management_group"
 
   display_name               = null
   group_id                   = null

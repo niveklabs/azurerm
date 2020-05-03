@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -34,6 +34,7 @@ resource "azurerm_network_watcher_flow_log" "this" {
     for_each = var.traffic_analytics
     content {
       enabled               = traffic_analytics.value["enabled"]
+      interval_in_minutes   = traffic_analytics.value["interval_in_minutes"]
       workspace_id          = traffic_analytics.value["workspace_id"]
       workspace_region      = traffic_analytics.value["workspace_region"]
       workspace_resource_id = traffic_analytics.value["workspace_resource_id"]

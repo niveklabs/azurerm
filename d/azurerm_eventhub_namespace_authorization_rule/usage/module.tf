@@ -1,5 +1,5 @@
 module "azurerm_eventhub_namespace_authorization_rule" {
-  source = "./azurerm/d/azurerm_eventhub_namespace_authorization_rule"
+  source = "./modules/azurerm/d/azurerm_eventhub_namespace_authorization_rule"
 
   name                = null
   namespace_name      = null

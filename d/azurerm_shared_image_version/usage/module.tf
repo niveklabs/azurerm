@@ -1,5 +1,5 @@
 module "azurerm_shared_image_version" {
-  source = "./azurerm/d/azurerm_shared_image_version"
+  source = "./modules/azurerm/d/azurerm_shared_image_version"
 
   gallery_name        = null
   image_name          = null

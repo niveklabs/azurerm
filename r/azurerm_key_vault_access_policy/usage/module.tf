@@ -1,5 +1,5 @@
 module "azurerm_key_vault_access_policy" {
-  source = "./azurerm/r/azurerm_key_vault_access_policy"
+  source = "./modules/azurerm/r/azurerm_key_vault_access_policy"
 
   application_id          = null
   certificate_permissions = []

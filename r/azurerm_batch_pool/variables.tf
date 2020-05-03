@@ -119,7 +119,8 @@ variable "network_configuration" {
           protocol = string
         }
       ))
-      subnet_id = string
+      public_ips = set(string)
+      subnet_id  = string
     }
   ))
   default = []

@@ -1,5 +1,5 @@
 module "azurerm_storage_account_sas" {
-  source = "./azurerm/d/azurerm_storage_account_sas"
+  source = "./modules/azurerm/d/azurerm_storage_account_sas"
 
   connection_string = null
   expiry            = null

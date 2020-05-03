@@ -1,5 +1,5 @@
 module "azurerm_express_route_circuit" {
-  source = "./azurerm/r/azurerm_express_route_circuit"
+  source = "./modules/azurerm/r/azurerm_express_route_circuit"
 
   allow_classic_operations = null
   bandwidth_in_mbps        = null

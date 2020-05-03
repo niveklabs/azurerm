@@ -1,5 +1,5 @@
 module "azurerm_api_management_authorization_server" {
-  source = "./azurerm/r/azurerm_api_management_authorization_server"
+  source = "./modules/azurerm/r/azurerm_api_management_authorization_server"
 
   api_management_name          = null
   authorization_endpoint       = null

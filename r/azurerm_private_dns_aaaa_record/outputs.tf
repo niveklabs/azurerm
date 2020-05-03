@@ -1,3 +1,8 @@
+output "fqdn" {
+  description = "returns a string"
+  value       = azurerm_private_dns_aaaa_record.this.fqdn
+}
+
 output "id" {
   description = "returns a string"
   value       = azurerm_private_dns_aaaa_record.this.id

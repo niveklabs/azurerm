@@ -1,5 +1,5 @@
 module "azurerm_container_group" {
-  source = "./azurerm/r/azurerm_container_group"
+  source = "./modules/azurerm/r/azurerm_container_group"
 
   dns_name_label      = null
   ip_address_type     = null

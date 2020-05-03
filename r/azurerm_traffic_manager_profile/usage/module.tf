@@ -1,5 +1,5 @@
 module "azurerm_traffic_manager_profile" {
-  source = "./azurerm/r/azurerm_traffic_manager_profile"
+  source = "./modules/azurerm/r/azurerm_traffic_manager_profile"
 
   name                   = null
   profile_status         = null

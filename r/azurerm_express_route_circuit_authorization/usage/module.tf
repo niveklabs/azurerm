@@ -1,5 +1,5 @@
 module "azurerm_express_route_circuit_authorization" {
-  source = "./azurerm/r/azurerm_express_route_circuit_authorization"
+  source = "./modules/azurerm/r/azurerm_express_route_circuit_authorization"
 
   express_route_circuit_name = null
   name                       = null

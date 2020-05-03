@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_output_mssql" {
-  source = "./azurerm/r/azurerm_stream_analytics_output_mssql"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_output_mssql"
 
   database                  = null
   name                      = null

@@ -1,5 +1,5 @@
 module "azurerm_monitor_log_profile" {
-  source = "./azurerm/r/azurerm_monitor_log_profile"
+  source = "./modules/azurerm/r/azurerm_monitor_log_profile"
 
   categories         = []
   locations          = []

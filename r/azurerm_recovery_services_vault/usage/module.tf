@@ -1,5 +1,5 @@
 module "azurerm_recovery_services_vault" {
-  source = "./azurerm/r/azurerm_recovery_services_vault"
+  source = "./modules/azurerm/r/azurerm_recovery_services_vault"
 
   location            = null
   name                = null

@@ -1,5 +1,5 @@
 module "azurerm_storage_account_network_rules" {
-  source = "./azurerm/r/azurerm_storage_account_network_rules"
+  source = "./modules/azurerm/r/azurerm_storage_account_network_rules"
 
   bypass                     = []
   default_action             = null

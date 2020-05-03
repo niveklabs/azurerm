@@ -1,5 +1,5 @@
 module "azurerm_dev_test_lab" {
-  source = "./azurerm/r/azurerm_dev_test_lab"
+  source = "./modules/azurerm/r/azurerm_dev_test_lab"
 
   location            = null
   name                = null

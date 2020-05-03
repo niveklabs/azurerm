@@ -1,5 +1,5 @@
 module "azurerm_iothub_shared_access_policy" {
-  source = "./azurerm/r/azurerm_iothub_shared_access_policy"
+  source = "./modules/azurerm/r/azurerm_iothub_shared_access_policy"
 
   device_connect      = null
   iothub_name         = null

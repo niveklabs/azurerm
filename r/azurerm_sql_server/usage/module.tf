@@ -1,5 +1,5 @@
 module "azurerm_sql_server" {
-  source = "./azurerm/r/azurerm_sql_server"
+  source = "./modules/azurerm/r/azurerm_sql_server"
 
   administrator_login          = null
   administrator_login_password = null
@@ -8,6 +8,13 @@ module "azurerm_sql_server" {
   resource_group_name          = null
   tags                         = {}
   version                      = null
+
+  extended_auditing_policy = [{
+    retention_in_days                       = null
+    storage_account_access_key              = null
+    storage_account_access_key_is_secondary = null
+    storage_endpoint                        = null
+  }]
 
   identity = [{
     principal_id = null

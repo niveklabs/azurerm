@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -8,6 +8,7 @@ resource "azurerm_netapp_account" "this" {
   location            = var.location
   name                = var.name
   resource_group_name = var.resource_group_name
+  tags                = var.tags
 
   dynamic "active_directory" {
     for_each = var.active_directory

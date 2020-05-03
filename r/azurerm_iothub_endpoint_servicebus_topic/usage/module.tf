@@ -1,5 +1,5 @@
 module "azurerm_iothub_endpoint_servicebus_topic" {
-  source = "./azurerm/r/azurerm_iothub_endpoint_servicebus_topic"
+  source = "./modules/azurerm/r/azurerm_iothub_endpoint_servicebus_topic"
 
   connection_string   = null
   iothub_name         = null

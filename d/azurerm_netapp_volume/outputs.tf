@@ -8,6 +8,11 @@ output "location" {
   value       = data.azurerm_netapp_volume.this.location
 }
 
+output "protocols" {
+  description = "returns a list of string"
+  value       = data.azurerm_netapp_volume.this.protocols
+}
+
 output "service_level" {
   description = "returns a string"
   value       = data.azurerm_netapp_volume.this.service_level

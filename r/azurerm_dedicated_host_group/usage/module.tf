@@ -1,5 +1,5 @@
 module "azurerm_dedicated_host_group" {
-  source = "./azurerm/r/azurerm_dedicated_host_group"
+  source = "./modules/azurerm/r/azurerm_dedicated_host_group"
 
   location                    = null
   name                        = null

@@ -1,5 +1,5 @@
 module "azurerm_servicebus_subscription_rule" {
-  source = "./azurerm/r/azurerm_servicebus_subscription_rule"
+  source = "./modules/azurerm/r/azurerm_servicebus_subscription_rule"
 
   action              = null
   filter_type         = null

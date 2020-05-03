@@ -1,5 +1,5 @@
 module "azurerm_cdn_endpoint" {
-  source = "./azurerm/r/azurerm_cdn_endpoint"
+  source = "./modules/azurerm/r/azurerm_cdn_endpoint"
 
   content_types_to_compress     = []
   is_compression_enabled        = null

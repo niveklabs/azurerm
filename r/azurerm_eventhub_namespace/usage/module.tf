@@ -1,5 +1,5 @@
 module "azurerm_eventhub_namespace" {
-  source = "./azurerm/r/azurerm_eventhub_namespace"
+  source = "./modules/azurerm/r/azurerm_eventhub_namespace"
 
   auto_inflate_enabled     = null
   capacity                 = null

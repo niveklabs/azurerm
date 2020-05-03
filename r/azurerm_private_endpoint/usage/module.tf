@@ -1,5 +1,5 @@
 module "azurerm_private_endpoint" {
-  source = "./azurerm/r/azurerm_private_endpoint"
+  source = "./modules/azurerm/r/azurerm_private_endpoint"
 
   location            = null
   name                = null
@@ -10,6 +10,7 @@ module "azurerm_private_endpoint" {
     is_manual_connection           = null
     name                           = null
     private_connection_resource_id = null
+    private_ip_address             = null
     request_message                = null
     subresource_names              = []
   }]

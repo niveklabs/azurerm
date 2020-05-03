@@ -1,5 +1,5 @@
 module "azurerm_virtual_network_gateway" {
-  source = "./azurerm/r/azurerm_virtual_network_gateway"
+  source = "./modules/azurerm/r/azurerm_virtual_network_gateway"
 
   active_active                    = null
   default_local_network_gateway_id = null

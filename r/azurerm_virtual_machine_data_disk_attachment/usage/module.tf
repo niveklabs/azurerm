@@ -1,5 +1,5 @@
 module "azurerm_virtual_machine_data_disk_attachment" {
-  source = "./azurerm/r/azurerm_virtual_machine_data_disk_attachment"
+  source = "./modules/azurerm/r/azurerm_virtual_machine_data_disk_attachment"
 
   caching                   = null
   create_option             = null

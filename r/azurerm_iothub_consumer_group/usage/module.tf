@@ -1,5 +1,5 @@
 module "azurerm_iothub_consumer_group" {
-  source = "./azurerm/r/azurerm_iothub_consumer_group"
+  source = "./modules/azurerm/r/azurerm_iothub_consumer_group"
 
   eventhub_endpoint_name = null
   iothub_name            = null

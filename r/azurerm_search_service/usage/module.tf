@@ -1,5 +1,5 @@
 module "azurerm_search_service" {
-  source = "./azurerm/r/azurerm_search_service"
+  source = "./modules/azurerm/r/azurerm_search_service"
 
   location            = null
   name                = null

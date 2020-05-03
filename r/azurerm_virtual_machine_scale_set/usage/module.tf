@@ -1,5 +1,5 @@
 module "azurerm_virtual_machine_scale_set" {
-  source = "./azurerm/r/azurerm_virtual_machine_scale_set"
+  source = "./modules/azurerm/r/azurerm_virtual_machine_scale_set"
 
   automatic_os_upgrade         = null
   eviction_policy              = null

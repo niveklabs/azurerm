@@ -1,5 +1,5 @@
 module "azurerm_data_factory_dataset_sql_server_table" {
-  source = "./azurerm/r/azurerm_data_factory_dataset_sql_server_table"
+  source = "./modules/azurerm/r/azurerm_data_factory_dataset_sql_server_table"
 
   additional_properties = {}
   annotations           = []

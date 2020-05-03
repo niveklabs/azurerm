@@ -1,5 +1,5 @@
 module "azurerm_storage_account" {
-  source = "./azurerm/r/azurerm_storage_account"
+  source = "./modules/azurerm/r/azurerm_storage_account"
 
   access_tier               = null
   account_kind              = null

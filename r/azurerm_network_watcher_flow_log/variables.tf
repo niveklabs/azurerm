@@ -57,6 +57,7 @@ variable "traffic_analytics" {
   type = set(object(
     {
       enabled               = bool
+      interval_in_minutes   = number
       workspace_id          = string
       workspace_region      = string
       workspace_resource_id = string

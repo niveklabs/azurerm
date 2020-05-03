@@ -1,5 +1,5 @@
 module "azurerm_application_insights" {
-  source = "./azurerm/r/azurerm_application_insights"
+  source = "./modules/azurerm/r/azurerm_application_insights"
 
   application_type                      = null
   daily_data_cap_in_gb                  = null

@@ -1,5 +1,5 @@
 module "azurerm_eventhub_consumer_group" {
-  source = "./azurerm/r/azurerm_eventhub_consumer_group"
+  source = "./modules/azurerm/r/azurerm_eventhub_consumer_group"
 
   eventhub_name       = null
   name                = null

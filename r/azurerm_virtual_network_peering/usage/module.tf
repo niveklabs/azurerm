@@ -1,5 +1,5 @@
 module "azurerm_virtual_network_peering" {
-  source = "./azurerm/r/azurerm_virtual_network_peering"
+  source = "./modules/azurerm/r/azurerm_virtual_network_peering"
 
   allow_forwarded_traffic      = null
   allow_gateway_transit        = null

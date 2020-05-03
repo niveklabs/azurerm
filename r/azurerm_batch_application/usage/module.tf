@@ -1,5 +1,5 @@
 module "azurerm_batch_application" {
-  source = "./azurerm/r/azurerm_batch_application"
+  source = "./modules/azurerm/r/azurerm_batch_application"
 
   account_name        = null
   allow_updates       = null

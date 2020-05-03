@@ -1,5 +1,5 @@
 module "azurerm_shared_image" {
-  source = "./azurerm/r/azurerm_shared_image"
+  source = "./modules/azurerm/r/azurerm_shared_image"
 
   description           = null
   eula                  = null

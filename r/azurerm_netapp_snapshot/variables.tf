@@ -23,6 +23,12 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "volume_name" {
   description = "(required)"
   type        = string

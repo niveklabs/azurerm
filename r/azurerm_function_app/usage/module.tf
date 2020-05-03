@@ -1,5 +1,5 @@
 module "azurerm_function_app" {
-  source = "./azurerm/r/azurerm_function_app"
+  source = "./modules/azurerm/r/azurerm_function_app"
 
   app_service_plan_id       = null
   app_settings              = {}
@@ -9,6 +9,7 @@ module "azurerm_function_app" {
   https_only                = null
   location                  = null
   name                      = null
+  os_type                   = null
   resource_group_name       = null
   storage_connection_string = null
   tags                      = {}

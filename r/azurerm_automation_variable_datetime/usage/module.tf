@@ -1,5 +1,5 @@
 module "azurerm_automation_variable_datetime" {
-  source = "./azurerm/r/azurerm_automation_variable_datetime"
+  source = "./modules/azurerm/r/azurerm_automation_variable_datetime"
 
   automation_account_name = null
   description             = null

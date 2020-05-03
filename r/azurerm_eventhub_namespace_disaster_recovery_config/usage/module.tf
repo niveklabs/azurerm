@@ -1,5 +1,5 @@
 module "azurerm_eventhub_namespace_disaster_recovery_config" {
-  source = "./azurerm/r/azurerm_eventhub_namespace_disaster_recovery_config"
+  source = "./modules/azurerm/r/azurerm_eventhub_namespace_disaster_recovery_config"
 
   alternate_name       = null
   name                 = null

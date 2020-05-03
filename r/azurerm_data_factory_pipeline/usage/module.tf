@@ -1,5 +1,5 @@
 module "azurerm_data_factory_pipeline" {
-  source = "./azurerm/r/azurerm_data_factory_pipeline"
+  source = "./modules/azurerm/r/azurerm_data_factory_pipeline"
 
   annotations         = []
   data_factory_name   = null

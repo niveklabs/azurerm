@@ -1,5 +1,5 @@
 module "azurerm_traffic_manager_geographical_location" {
-  source = "./azurerm/d/azurerm_traffic_manager_geographical_location"
+  source = "./modules/azurerm/d/azurerm_traffic_manager_geographical_location"
 
   name = null
 

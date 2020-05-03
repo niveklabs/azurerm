@@ -1,5 +1,5 @@
 module "azurerm_container_registry_webhook" {
-  source = "./azurerm/r/azurerm_container_registry_webhook"
+  source = "./modules/azurerm/r/azurerm_container_registry_webhook"
 
   actions             = []
   custom_headers      = {}

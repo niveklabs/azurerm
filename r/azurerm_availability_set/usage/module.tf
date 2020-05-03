@@ -1,5 +1,5 @@
 module "azurerm_availability_set" {
-  source = "./azurerm/r/azurerm_availability_set"
+  source = "./modules/azurerm/r/azurerm_availability_set"
 
   location                     = null
   managed                      = null

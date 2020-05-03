@@ -1,5 +1,5 @@
 module "azurerm_servicebus_namespace" {
-  source = "./azurerm/r/azurerm_servicebus_namespace"
+  source = "./modules/azurerm/r/azurerm_servicebus_namespace"
 
   capacity            = null
   location            = null

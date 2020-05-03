@@ -103,8 +103,10 @@ variable "default_node_pool" {
       min_count             = number
       name                  = string
       node_count            = number
+      node_labels           = map(string)
       node_taints           = list(string)
       os_disk_size_gb       = number
+      tags                  = map(string)
       type                  = string
       vm_size               = string
       vnet_subnet_id        = string

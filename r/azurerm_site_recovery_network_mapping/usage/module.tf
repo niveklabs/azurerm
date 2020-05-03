@@ -1,5 +1,5 @@
 module "azurerm_site_recovery_network_mapping" {
-  source = "./azurerm/r/azurerm_site_recovery_network_mapping"
+  source = "./modules/azurerm/r/azurerm_site_recovery_network_mapping"
 
   name                        = null
   recovery_vault_name         = null

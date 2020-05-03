@@ -1,5 +1,5 @@
 module "azurerm_bot_web_app" {
-  source = "./azurerm/r/azurerm_bot_web_app"
+  source = "./modules/azurerm/r/azurerm_bot_web_app"
 
   developer_app_insights_api_key        = null
   developer_app_insights_application_id = null

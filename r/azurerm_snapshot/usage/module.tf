@@ -1,5 +1,5 @@
 module "azurerm_snapshot" {
-  source = "./azurerm/r/azurerm_snapshot"
+  source = "./modules/azurerm/r/azurerm_snapshot"
 
   create_option       = null
   disk_size_gb        = null

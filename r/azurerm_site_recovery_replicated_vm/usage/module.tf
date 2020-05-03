@@ -1,5 +1,5 @@
 module "azurerm_site_recovery_replicated_vm" {
-  source = "./azurerm/r/azurerm_site_recovery_replicated_vm"
+  source = "./modules/azurerm/r/azurerm_site_recovery_replicated_vm"
 
   managed_disk = [{
     disk_id                    = null

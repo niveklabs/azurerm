@@ -1,5 +1,5 @@
 module "azurerm_storage_account_customer_managed_key" {
-  source = "./azurerm/r/azurerm_storage_account_customer_managed_key"
+  source = "./modules/azurerm/r/azurerm_storage_account_customer_managed_key"
 
   key_name           = null
   key_vault_id       = null

@@ -1,5 +1,5 @@
 module "azurerm_template_deployment" {
-  source = "./azurerm/r/azurerm_template_deployment"
+  source = "./modules/azurerm/r/azurerm_template_deployment"
 
   deployment_mode     = null
   name                = null

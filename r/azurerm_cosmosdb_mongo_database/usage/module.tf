@@ -1,5 +1,5 @@
 module "azurerm_cosmosdb_mongo_database" {
-  source = "./azurerm/r/azurerm_cosmosdb_mongo_database"
+  source = "./modules/azurerm/r/azurerm_cosmosdb_mongo_database"
 
   account_name        = null
   name                = null

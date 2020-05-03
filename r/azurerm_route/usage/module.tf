@@ -1,5 +1,5 @@
 module "azurerm_route" {
-  source = "./azurerm/r/azurerm_route"
+  source = "./modules/azurerm/r/azurerm_route"
 
   address_prefix         = null
   name                   = null

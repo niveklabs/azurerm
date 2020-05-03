@@ -1,5 +1,5 @@
 module "azurerm_hdinsight_interactive_query_cluster" {
-  source = "./azurerm/r/azurerm_hdinsight_interactive_query_cluster"
+  source = "./modules/azurerm/r/azurerm_hdinsight_interactive_query_cluster"
 
   cluster_version     = null
   location            = null

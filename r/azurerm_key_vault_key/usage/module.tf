@@ -1,5 +1,5 @@
 module "azurerm_key_vault_key" {
-  source = "./azurerm/r/azurerm_key_vault_key"
+  source = "./modules/azurerm/r/azurerm_key_vault_key"
 
   curve           = null
   expiration_date = null

@@ -19,6 +19,12 @@ output "primary_access_key" {
   sensitive   = true
 }
 
+output "primary_connection_string" {
+  description = "returns a string"
+  value       = azurerm_redis_cache.this.primary_connection_string
+  sensitive   = true
+}
+
 output "private_static_ip_address" {
   description = "returns a string"
   value       = azurerm_redis_cache.this.private_static_ip_address
@@ -27,6 +33,12 @@ output "private_static_ip_address" {
 output "secondary_access_key" {
   description = "returns a string"
   value       = azurerm_redis_cache.this.secondary_access_key
+  sensitive   = true
+}
+
+output "secondary_connection_string" {
+  description = "returns a string"
+  value       = azurerm_redis_cache.this.secondary_connection_string
   sensitive   = true
 }
 

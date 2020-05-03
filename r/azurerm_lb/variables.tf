@@ -36,6 +36,7 @@ variable "frontend_ip_configuration" {
       outbound_rules                = set(string)
       private_ip_address            = string
       private_ip_address_allocation = string
+      private_ip_address_version    = string
       public_ip_address_id          = string
       public_ip_prefix_id           = string
       subnet_id                     = string

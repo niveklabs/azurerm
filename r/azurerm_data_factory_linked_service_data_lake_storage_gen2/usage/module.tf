@@ -1,5 +1,5 @@
 module "azurerm_data_factory_linked_service_data_lake_storage_gen2" {
-  source = "./azurerm/r/azurerm_data_factory_linked_service_data_lake_storage_gen2"
+  source = "./modules/azurerm/r/azurerm_data_factory_linked_service_data_lake_storage_gen2"
 
   additional_properties    = {}
   annotations              = []

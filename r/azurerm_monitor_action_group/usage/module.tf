@@ -1,5 +1,5 @@
 module "azurerm_monitor_action_group" {
-  source = "./azurerm/r/azurerm_monitor_action_group"
+  source = "./modules/azurerm/r/azurerm_monitor_action_group"
 
   enabled             = null
   name                = null

@@ -1,5 +1,5 @@
 module "azurerm_virtual_network" {
-  source = "./azurerm/r/azurerm_virtual_network"
+  source = "./modules/azurerm/r/azurerm_virtual_network"
 
   address_space       = []
   dns_servers         = []

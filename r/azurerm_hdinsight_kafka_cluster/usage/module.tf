@@ -1,5 +1,5 @@
 module "azurerm_hdinsight_kafka_cluster" {
-  source = "./azurerm/r/azurerm_hdinsight_kafka_cluster"
+  source = "./modules/azurerm/r/azurerm_hdinsight_kafka_cluster"
 
   cluster_version     = null
   location            = null

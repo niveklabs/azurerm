@@ -1,5 +1,5 @@
 module "azurerm_storage_container" {
-  source = "./azurerm/r/azurerm_storage_container"
+  source = "./modules/azurerm/r/azurerm_storage_container"
 
   container_access_type = null
   metadata              = {}

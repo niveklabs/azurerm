@@ -1,5 +1,5 @@
 module "azurerm_signalr_service" {
-  source = "./azurerm/r/azurerm_signalr_service"
+  source = "./modules/azurerm/r/azurerm_signalr_service"
 
   location            = null
   name                = null

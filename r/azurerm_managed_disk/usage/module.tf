@@ -1,5 +1,5 @@
 module "azurerm_managed_disk" {
-  source = "./azurerm/r/azurerm_managed_disk"
+  source = "./modules/azurerm/r/azurerm_managed_disk"
 
   create_option          = null
   disk_encryption_set_id = null

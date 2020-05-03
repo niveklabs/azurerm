@@ -1,5 +1,5 @@
 module "azurerm_security_center_workspace" {
-  source = "./azurerm/r/azurerm_security_center_workspace"
+  source = "./modules/azurerm/r/azurerm_security_center_workspace"
 
   scope        = null
   workspace_id = null

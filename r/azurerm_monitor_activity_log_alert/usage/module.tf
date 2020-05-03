@@ -1,5 +1,5 @@
 module "azurerm_monitor_activity_log_alert" {
-  source = "./azurerm/r/azurerm_monitor_activity_log_alert"
+  source = "./modules/azurerm/r/azurerm_monitor_activity_log_alert"
 
   description         = null
   enabled             = null

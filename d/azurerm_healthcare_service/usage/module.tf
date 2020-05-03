@@ -1,5 +1,5 @@
 module "azurerm_healthcare_service" {
-  source = "./azurerm/d/azurerm_healthcare_service"
+  source = "./modules/azurerm/d/azurerm_healthcare_service"
 
   location            = null
   name                = null

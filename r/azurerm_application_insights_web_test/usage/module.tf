@@ -1,5 +1,5 @@
 module "azurerm_application_insights_web_test" {
-  source = "./azurerm/r/azurerm_application_insights_web_test"
+  source = "./modules/azurerm/r/azurerm_application_insights_web_test"
 
   application_insights_id = null
   configuration           = null

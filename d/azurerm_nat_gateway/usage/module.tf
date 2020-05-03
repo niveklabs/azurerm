@@ -1,5 +1,5 @@
 module "azurerm_nat_gateway" {
-  source = "./azurerm/d/azurerm_nat_gateway"
+  source = "./modules/azurerm/d/azurerm_nat_gateway"
 
   name                  = null
   public_ip_address_ids = []

@@ -1,5 +1,5 @@
 module "azurerm_monitor_metric_alert" {
-  source = "./azurerm/r/azurerm_monitor_metric_alert"
+  source = "./modules/azurerm/r/azurerm_monitor_metric_alert"
 
   auto_mitigate       = null
   description         = null

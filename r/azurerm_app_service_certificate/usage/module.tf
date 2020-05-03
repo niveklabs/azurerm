@@ -1,5 +1,5 @@
 module "azurerm_app_service_certificate" {
-  source = "./azurerm/r/azurerm_app_service_certificate"
+  source = "./modules/azurerm/r/azurerm_app_service_certificate"
 
   key_vault_secret_id = null
   location            = null

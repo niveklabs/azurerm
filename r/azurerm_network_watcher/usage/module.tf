@@ -1,5 +1,5 @@
 module "azurerm_network_watcher" {
-  source = "./azurerm/r/azurerm_network_watcher"
+  source = "./modules/azurerm/r/azurerm_network_watcher"
 
   location            = null
   name                = null

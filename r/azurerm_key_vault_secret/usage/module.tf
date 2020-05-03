@@ -1,5 +1,5 @@
 module "azurerm_key_vault_secret" {
-  source = "./azurerm/r/azurerm_key_vault_secret"
+  source = "./modules/azurerm/r/azurerm_key_vault_secret"
 
   content_type    = null
   expiration_date = null

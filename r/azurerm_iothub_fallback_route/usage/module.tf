@@ -1,5 +1,5 @@
 module "azurerm_iothub_fallback_route" {
-  source = "./azurerm/r/azurerm_iothub_fallback_route"
+  source = "./modules/azurerm/r/azurerm_iothub_fallback_route"
 
   condition           = null
   enabled             = null

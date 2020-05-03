@@ -1,5 +1,5 @@
 module "azurerm_bot_channel_email" {
-  source = "./azurerm/r/azurerm_bot_channel_email"
+  source = "./modules/azurerm/r/azurerm_bot_channel_email"
 
   bot_name            = null
   email_address       = null

@@ -1,5 +1,5 @@
 module "azurerm_batch_pool" {
-  source = "./azurerm/r/azurerm_batch_pool"
+  source = "./modules/azurerm/r/azurerm_batch_pool"
 
   account_name                  = null
   display_name                  = null
@@ -50,7 +50,8 @@ module "azurerm_batch_pool" {
       }]
       protocol = null
     }]
-    subnet_id = null
+    public_ips = []
+    subnet_id  = null
   }]
 
   start_task = [{

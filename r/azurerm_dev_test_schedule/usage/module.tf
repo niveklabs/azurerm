@@ -1,5 +1,5 @@
 module "azurerm_dev_test_schedule" {
-  source = "./azurerm/r/azurerm_dev_test_schedule"
+  source = "./modules/azurerm/r/azurerm_dev_test_schedule"
 
   lab_name            = null
   location            = null

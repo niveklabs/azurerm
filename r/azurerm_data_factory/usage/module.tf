@@ -1,5 +1,5 @@
 module "azurerm_data_factory" {
-  source = "./azurerm/r/azurerm_data_factory"
+  source = "./modules/azurerm/r/azurerm_data_factory"
 
   location            = null
   name                = null

@@ -1,5 +1,5 @@
 module "azurerm_nat_gateway" {
-  source = "./azurerm/r/azurerm_nat_gateway"
+  source = "./modules/azurerm/r/azurerm_nat_gateway"
 
   idle_timeout_in_minutes = null
   location                = null

@@ -1,5 +1,5 @@
 module "azurerm_mysql_configuration" {
-  source = "./azurerm/r/azurerm_mysql_configuration"
+  source = "./modules/azurerm/r/azurerm_mysql_configuration"
 
   name                = null
   resource_group_name = null

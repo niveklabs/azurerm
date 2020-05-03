@@ -1,5 +1,5 @@
 module "azurerm_postgresql_virtual_network_rule" {
-  source = "./azurerm/r/azurerm_postgresql_virtual_network_rule"
+  source = "./modules/azurerm/r/azurerm_postgresql_virtual_network_rule"
 
   ignore_missing_vnet_service_endpoint = null
   name                                 = null

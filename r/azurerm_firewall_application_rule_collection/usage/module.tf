@@ -1,5 +1,5 @@
 module "azurerm_firewall_application_rule_collection" {
-  source = "./azurerm/r/azurerm_firewall_application_rule_collection"
+  source = "./modules/azurerm/r/azurerm_firewall_application_rule_collection"
 
   action              = null
   azure_firewall_name = null

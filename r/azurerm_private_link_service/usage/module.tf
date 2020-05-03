@@ -1,5 +1,5 @@
 module "azurerm_private_link_service" {
-  source = "./azurerm/r/azurerm_private_link_service"
+  source = "./modules/azurerm/r/azurerm_private_link_service"
 
   auto_approval_subscription_ids              = []
   enable_proxy_protocol                       = null

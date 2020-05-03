@@ -1,5 +1,5 @@
 module "azurerm_virtual_network_gateway_connection" {
-  source = "./azurerm/r/azurerm_virtual_network_gateway_connection"
+  source = "./modules/azurerm/r/azurerm_virtual_network_gateway_connection"
 
   authorization_key                  = null
   connection_protocol                = null

@@ -1,5 +1,5 @@
 module "azurerm_api_management_logger" {
-  source = "./azurerm/r/azurerm_api_management_logger"
+  source = "./modules/azurerm/r/azurerm_api_management_logger"
 
   api_management_name = null
   buffered            = null

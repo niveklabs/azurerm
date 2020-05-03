@@ -1,5 +1,5 @@
 module "azurerm_local_network_gateway" {
-  source = "./azurerm/r/azurerm_local_network_gateway"
+  source = "./modules/azurerm/r/azurerm_local_network_gateway"
 
   address_space       = []
   gateway_address     = null

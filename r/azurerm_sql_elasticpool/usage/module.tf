@@ -1,5 +1,5 @@
 module "azurerm_sql_elasticpool" {
-  source = "./azurerm/r/azurerm_sql_elasticpool"
+  source = "./modules/azurerm/r/azurerm_sql_elasticpool"
 
   db_dtu_max          = null
   db_dtu_min          = null

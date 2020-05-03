@@ -1,5 +1,5 @@
 module "azurerm_management_lock" {
-  source = "./azurerm/r/azurerm_management_lock"
+  source = "./modules/azurerm/r/azurerm_management_lock"
 
   lock_level = null
   name       = null

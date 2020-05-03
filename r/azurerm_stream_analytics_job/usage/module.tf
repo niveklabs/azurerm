@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_job" {
-  source = "./azurerm/r/azurerm_stream_analytics_job"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_job"
 
   compatibility_level                      = null
   data_locale                              = null

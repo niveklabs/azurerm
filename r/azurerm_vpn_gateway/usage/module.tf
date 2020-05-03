@@ -1,5 +1,5 @@
 module "azurerm_vpn_gateway" {
-  source = "./azurerm/r/azurerm_vpn_gateway"
+  source = "./modules/azurerm/r/azurerm_vpn_gateway"
 
   location            = null
   name                = null

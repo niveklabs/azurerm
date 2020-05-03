@@ -1,5 +1,5 @@
 module "azurerm_postgresql_configuration" {
-  source = "./azurerm/r/azurerm_postgresql_configuration"
+  source = "./modules/azurerm/r/azurerm_postgresql_configuration"
 
   name                = null
   resource_group_name = null

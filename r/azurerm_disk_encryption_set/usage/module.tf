@@ -1,5 +1,5 @@
 module "azurerm_disk_encryption_set" {
-  source = "./azurerm/r/azurerm_disk_encryption_set"
+  source = "./modules/azurerm/r/azurerm_disk_encryption_set"
 
   key_vault_key_id    = null
   location            = null

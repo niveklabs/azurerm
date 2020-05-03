@@ -1,5 +1,5 @@
 module "azurerm_key_vault" {
-  source = "./azurerm/r/azurerm_key_vault"
+  source = "./modules/azurerm/r/azurerm_key_vault"
 
   access_policy = [{
     application_id          = null

@@ -174,11 +174,6 @@ output "secondary_web_host" {
   value       = azurerm_storage_account.this.secondary_web_host
 }
 
-output "tags" {
-  description = "returns a map of string"
-  value       = azurerm_storage_account.this.tags
-}
-
 output "this" {
   value = azurerm_storage_account.this
 }

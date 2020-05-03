@@ -1,5 +1,5 @@
 module "azurerm_api_management_backend" {
-  source = "./azurerm/r/azurerm_api_management_backend"
+  source = "./modules/azurerm/r/azurerm_api_management_backend"
 
   api_management_name = null
   description         = null

@@ -1,5 +1,5 @@
 module "azurerm_netapp_volume" {
-  source = "./azurerm/d/azurerm_netapp_volume"
+  source = "./modules/azurerm/d/azurerm_netapp_volume"
 
   account_name        = null
   name                = null

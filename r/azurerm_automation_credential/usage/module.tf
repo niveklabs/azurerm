@@ -1,5 +1,5 @@
 module "azurerm_automation_credential" {
-  source = "./azurerm/r/azurerm_automation_credential"
+  source = "./modules/azurerm/r/azurerm_automation_credential"
 
   automation_account_name = null
   description             = null

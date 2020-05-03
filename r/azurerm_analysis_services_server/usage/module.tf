@@ -1,5 +1,5 @@
 module "azurerm_analysis_services_server" {
-  source = "./azurerm/r/azurerm_analysis_services_server"
+  source = "./modules/azurerm/r/azurerm_analysis_services_server"
 
   admin_users               = []
   backup_blob_container_uri = null

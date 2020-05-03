@@ -1,5 +1,5 @@
 module "azurerm_servicebus_topic" {
-  source = "./azurerm/r/azurerm_servicebus_topic"
+  source = "./modules/azurerm/r/azurerm_servicebus_topic"
 
   auto_delete_on_idle                     = null
   default_message_ttl                     = null

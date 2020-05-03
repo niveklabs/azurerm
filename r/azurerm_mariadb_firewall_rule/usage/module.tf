@@ -1,5 +1,5 @@
 module "azurerm_mariadb_firewall_rule" {
-  source = "./azurerm/r/azurerm_mariadb_firewall_rule"
+  source = "./modules/azurerm/r/azurerm_mariadb_firewall_rule"
 
   end_ip_address      = null
   name                = null

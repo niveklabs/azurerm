@@ -33,6 +33,12 @@ variable "max_size_bytes" {
   default     = null
 }
 
+variable "max_size_gb" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "name" {
   description = "(required)"
   type        = string

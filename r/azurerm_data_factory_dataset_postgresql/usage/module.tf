@@ -1,5 +1,5 @@
 module "azurerm_data_factory_dataset_postgresql" {
-  source = "./azurerm/r/azurerm_data_factory_dataset_postgresql"
+  source = "./modules/azurerm/r/azurerm_data_factory_dataset_postgresql"
 
   additional_properties = {}
   annotations           = []

@@ -1,5 +1,5 @@
 module "azurerm_storage_management_policy" {
-  source = "./azurerm/r/azurerm_storage_management_policy"
+  source = "./modules/azurerm/r/azurerm_storage_management_policy"
 
   storage_account_id = null
 

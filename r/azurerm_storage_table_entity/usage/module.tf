@@ -1,5 +1,5 @@
 module "azurerm_storage_table_entity" {
-  source = "./azurerm/r/azurerm_storage_table_entity"
+  source = "./modules/azurerm/r/azurerm_storage_table_entity"
 
   entity               = {}
   partition_key        = null

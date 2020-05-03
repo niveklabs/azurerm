@@ -1,5 +1,5 @@
 module "azurerm_automation_dsc_configuration" {
-  source = "./azurerm/r/azurerm_automation_dsc_configuration"
+  source = "./modules/azurerm/r/azurerm_automation_dsc_configuration"
 
   automation_account_name = null
   content_embedded        = null
@@ -8,6 +8,7 @@ module "azurerm_automation_dsc_configuration" {
   log_verbose             = null
   name                    = null
   resource_group_name     = null
+  tags                    = {}
 
   timeouts = [{
     create = null

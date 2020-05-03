@@ -1,5 +1,5 @@
 module "azurerm_cosmosdb_account" {
-  source = "./azurerm/r/azurerm_cosmosdb_account"
+  source = "./modules/azurerm/r/azurerm_cosmosdb_account"
 
   enable_automatic_failover         = null
   enable_multiple_write_locations   = null

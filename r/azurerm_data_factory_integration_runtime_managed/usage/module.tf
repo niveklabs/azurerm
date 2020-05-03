@@ -1,5 +1,5 @@
 module "azurerm_data_factory_integration_runtime_managed" {
-  source = "./azurerm/r/azurerm_data_factory_integration_runtime_managed"
+  source = "./modules/azurerm/r/azurerm_data_factory_integration_runtime_managed"
 
   data_factory_name                = null
   description                      = null

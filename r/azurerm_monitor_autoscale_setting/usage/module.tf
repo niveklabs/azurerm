@@ -1,5 +1,5 @@
 module "azurerm_monitor_autoscale_setting" {
-  source = "./azurerm/r/azurerm_monitor_autoscale_setting"
+  source = "./modules/azurerm/r/azurerm_monitor_autoscale_setting"
 
   enabled             = null
   location            = null

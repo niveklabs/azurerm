@@ -1,5 +1,5 @@
 module "azurerm_virtual_machine_extension" {
-  source = "./azurerm/r/azurerm_virtual_machine_extension"
+  source = "./modules/azurerm/r/azurerm_virtual_machine_extension"
 
   auto_upgrade_minor_version = null
   name                       = null

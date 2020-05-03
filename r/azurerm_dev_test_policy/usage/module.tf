@@ -1,5 +1,5 @@
 module "azurerm_dev_test_policy" {
-  source = "./azurerm/r/azurerm_dev_test_policy"
+  source = "./modules/azurerm/r/azurerm_dev_test_policy"
 
   description         = null
   evaluator_type      = null

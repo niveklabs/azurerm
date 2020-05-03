@@ -1,5 +1,5 @@
 module "azurerm_user_assigned_identity" {
-  source = "./azurerm/r/azurerm_user_assigned_identity"
+  source = "./modules/azurerm/r/azurerm_user_assigned_identity"
 
   location            = null
   name                = null

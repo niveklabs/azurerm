@@ -1,5 +1,5 @@
 module "azurerm_mariadb_database" {
-  source = "./azurerm/r/azurerm_mariadb_database"
+  source = "./modules/azurerm/r/azurerm_mariadb_database"
 
   charset             = null
   collation           = null

@@ -1,5 +1,5 @@
 module "azurerm_lb_probe" {
-  source = "./azurerm/r/azurerm_lb_probe"
+  source = "./modules/azurerm/r/azurerm_lb_probe"
 
   interval_in_seconds = null
   loadbalancer_id     = null

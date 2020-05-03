@@ -43,6 +43,12 @@ variable "name" {
   type        = string
 }
 
+variable "os_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "resource_group_name" {
   description = "(required)"
   type        = string

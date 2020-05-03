@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_stream_input_iothub" {
-  source = "./azurerm/r/azurerm_stream_analytics_stream_input_iothub"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_stream_input_iothub"
 
   endpoint                     = null
   eventhub_consumer_group_name = null

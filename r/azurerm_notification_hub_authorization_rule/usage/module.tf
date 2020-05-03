@@ -1,5 +1,5 @@
 module "azurerm_notification_hub_authorization_rule" {
-  source = "./azurerm/r/azurerm_notification_hub_authorization_rule"
+  source = "./modules/azurerm/r/azurerm_notification_hub_authorization_rule"
 
   listen                = null
   manage                = null

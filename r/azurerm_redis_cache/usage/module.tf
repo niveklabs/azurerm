@@ -1,5 +1,5 @@
 module "azurerm_redis_cache" {
-  source = "./azurerm/r/azurerm_redis_cache"
+  source = "./modules/azurerm/r/azurerm_redis_cache"
 
   capacity                  = null
   enable_non_ssl_port       = null

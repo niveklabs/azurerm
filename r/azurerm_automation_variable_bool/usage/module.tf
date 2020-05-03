@@ -1,5 +1,5 @@
 module "azurerm_automation_variable_bool" {
-  source = "./azurerm/r/azurerm_automation_variable_bool"
+  source = "./modules/azurerm/r/azurerm_automation_variable_bool"
 
   automation_account_name = null
   description             = null

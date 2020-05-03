@@ -1,5 +1,5 @@
 module "azurerm_hdinsight_hadoop_cluster" {
-  source = "./azurerm/r/azurerm_hdinsight_hadoop_cluster"
+  source = "./modules/azurerm/r/azurerm_hdinsight_hadoop_cluster"
 
   cluster_version     = null
   location            = null

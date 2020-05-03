@@ -1,5 +1,5 @@
 module "azurerm_data_lake_store" {
-  source = "./azurerm/r/azurerm_data_lake_store"
+  source = "./modules/azurerm/r/azurerm_data_lake_store"
 
   encryption_state         = null
   encryption_type          = null

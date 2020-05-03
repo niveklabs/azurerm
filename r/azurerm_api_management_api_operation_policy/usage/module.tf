@@ -1,5 +1,5 @@
 module "azurerm_api_management_api_operation_policy" {
-  source = "./azurerm/r/azurerm_api_management_api_operation_policy"
+  source = "./modules/azurerm/r/azurerm_api_management_api_operation_policy"
 
   api_management_name = null
   api_name            = null

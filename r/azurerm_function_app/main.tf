@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -13,6 +13,7 @@ resource "azurerm_function_app" "this" {
   https_only                = var.https_only
   location                  = var.location
   name                      = var.name
+  os_type                   = var.os_type
   resource_group_name       = var.resource_group_name
   storage_connection_string = var.storage_connection_string
   tags                      = var.tags

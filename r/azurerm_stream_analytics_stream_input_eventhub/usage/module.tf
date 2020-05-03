@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_stream_input_eventhub" {
-  source = "./azurerm/r/azurerm_stream_analytics_stream_input_eventhub"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_stream_input_eventhub"
 
   eventhub_consumer_group_name = null
   eventhub_name                = null

@@ -1,5 +1,5 @@
 module "azurerm_kubernetes_cluster" {
-  source = "./azurerm/r/azurerm_kubernetes_cluster"
+  source = "./modules/azurerm/r/azurerm_kubernetes_cluster"
 
   api_server_authorized_ip_ranges = []
   dns_prefix                      = null
@@ -42,8 +42,10 @@ module "azurerm_kubernetes_cluster" {
     min_count             = null
     name                  = null
     node_count            = null
+    node_labels           = {}
     node_taints           = []
     os_disk_size_gb       = null
+    tags                  = {}
     type                  = null
     vm_size               = null
     vnet_subnet_id        = null

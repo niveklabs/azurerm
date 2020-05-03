@@ -1,5 +1,5 @@
 module "azurerm_automation_certificate" {
-  source = "./azurerm/r/azurerm_automation_certificate"
+  source = "./modules/azurerm/r/azurerm_automation_certificate"
 
   automation_account_name = null
   base64                  = null

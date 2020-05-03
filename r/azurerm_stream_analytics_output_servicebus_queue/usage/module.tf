@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_output_servicebus_queue" {
-  source = "./azurerm/r/azurerm_stream_analytics_output_servicebus_queue"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_output_servicebus_queue"
 
   name                      = null
   queue_name                = null

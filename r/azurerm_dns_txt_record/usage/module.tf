@@ -1,5 +1,5 @@
 module "azurerm_dns_txt_record" {
-  source = "./azurerm/r/azurerm_dns_txt_record"
+  source = "./modules/azurerm/r/azurerm_dns_txt_record"
 
   name                = null
   resource_group_name = null

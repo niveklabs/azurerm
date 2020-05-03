@@ -1,5 +1,5 @@
 module "azurerm_frontdoor_firewall_policy" {
-  source = "./azurerm/r/azurerm_frontdoor_firewall_policy"
+  source = "./modules/azurerm/r/azurerm_frontdoor_firewall_policy"
 
   custom_block_response_body        = null
   custom_block_response_status_code = null

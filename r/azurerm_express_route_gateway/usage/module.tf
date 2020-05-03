@@ -1,5 +1,5 @@
 module "azurerm_express_route_gateway" {
-  source = "./azurerm/r/azurerm_express_route_gateway"
+  source = "./modules/azurerm/r/azurerm_express_route_gateway"
 
   location            = null
   name                = null

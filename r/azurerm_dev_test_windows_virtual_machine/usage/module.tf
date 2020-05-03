@@ -1,5 +1,5 @@
 module "azurerm_dev_test_windows_virtual_machine" {
-  source = "./azurerm/r/azurerm_dev_test_windows_virtual_machine"
+  source = "./modules/azurerm/r/azurerm_dev_test_windows_virtual_machine"
 
   allow_claim                = null
   disallow_public_ip_address = null

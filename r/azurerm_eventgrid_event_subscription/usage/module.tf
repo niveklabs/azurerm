@@ -1,5 +1,5 @@
 module "azurerm_eventgrid_event_subscription" {
-  source = "./azurerm/r/azurerm_eventgrid_event_subscription"
+  source = "./modules/azurerm/r/azurerm_eventgrid_event_subscription"
 
   event_delivery_schema = null
   included_event_types  = []

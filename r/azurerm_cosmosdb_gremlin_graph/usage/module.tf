@@ -1,5 +1,5 @@
 module "azurerm_cosmosdb_gremlin_graph" {
-  source = "./azurerm/r/azurerm_cosmosdb_gremlin_graph"
+  source = "./modules/azurerm/r/azurerm_cosmosdb_gremlin_graph"
 
   account_name        = null
   database_name       = null

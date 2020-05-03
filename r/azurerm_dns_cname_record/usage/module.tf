@@ -1,5 +1,5 @@
 module "azurerm_dns_cname_record" {
-  source = "./azurerm/r/azurerm_dns_cname_record"
+  source = "./modules/azurerm/r/azurerm_dns_cname_record"
 
   name                = null
   record              = null

@@ -1,5 +1,5 @@
 module "azurerm_app_service_custom_hostname_binding" {
-  source = "./azurerm/r/azurerm_app_service_custom_hostname_binding"
+  source = "./modules/azurerm/r/azurerm_app_service_custom_hostname_binding"
 
   app_service_name    = null
   hostname            = null

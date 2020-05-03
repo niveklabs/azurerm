@@ -1,5 +1,5 @@
 module "azurerm_databricks_workspace" {
-  source = "./azurerm/r/azurerm_databricks_workspace"
+  source = "./modules/azurerm/r/azurerm_databricks_workspace"
 
   location                    = null
   managed_resource_group_name = null

@@ -1,5 +1,5 @@
 module "azurerm_maps_account" {
-  source = "./azurerm/r/azurerm_maps_account"
+  source = "./modules/azurerm/r/azurerm_maps_account"
 
   name                = null
   resource_group_name = null

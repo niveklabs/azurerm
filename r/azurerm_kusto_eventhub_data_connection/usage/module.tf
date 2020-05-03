@@ -1,5 +1,5 @@
 module "azurerm_kusto_eventhub_data_connection" {
-  source = "./azurerm/r/azurerm_kusto_eventhub_data_connection"
+  source = "./modules/azurerm/r/azurerm_kusto_eventhub_data_connection"
 
   cluster_name        = null
   consumer_group      = null

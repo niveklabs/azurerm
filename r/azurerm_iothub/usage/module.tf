@@ -1,5 +1,5 @@
 module "azurerm_iothub" {
-  source = "./azurerm/r/azurerm_iothub"
+  source = "./modules/azurerm/r/azurerm_iothub"
 
   event_hub_partition_count   = null
   event_hub_retention_in_days = null

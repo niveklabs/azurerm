@@ -1,5 +1,5 @@
 module "azurerm_mariadb_server" {
-  source = "./azurerm/r/azurerm_mariadb_server"
+  source = "./modules/azurerm/r/azurerm_mariadb_server"
 
   administrator_login          = null
   administrator_login_password = null

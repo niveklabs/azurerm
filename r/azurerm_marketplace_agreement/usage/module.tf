@@ -1,5 +1,5 @@
 module "azurerm_marketplace_agreement" {
-  source = "./azurerm/r/azurerm_marketplace_agreement"
+  source = "./modules/azurerm/r/azurerm_marketplace_agreement"
 
   offer     = null
   plan      = null

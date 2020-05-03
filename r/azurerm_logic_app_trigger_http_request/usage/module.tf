@@ -1,5 +1,5 @@
 module "azurerm_logic_app_trigger_http_request" {
-  source = "./azurerm/r/azurerm_logic_app_trigger_http_request"
+  source = "./modules/azurerm/r/azurerm_logic_app_trigger_http_request"
 
   logic_app_id  = null
   method        = null

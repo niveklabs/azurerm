@@ -1,5 +1,5 @@
 module "azurerm_stream_analytics_output_servicebus_topic" {
-  source = "./azurerm/r/azurerm_stream_analytics_output_servicebus_topic"
+  source = "./modules/azurerm/r/azurerm_stream_analytics_output_servicebus_topic"
 
   name                      = null
   resource_group_name       = null

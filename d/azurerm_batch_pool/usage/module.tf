@@ -1,5 +1,5 @@
 module "azurerm_batch_pool" {
-  source = "./azurerm/d/azurerm_batch_pool"
+  source = "./modules/azurerm/d/azurerm_batch_pool"
 
   account_name        = null
   name                = null

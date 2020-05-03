@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -14,9 +14,11 @@ resource "azurerm_kubernetes_cluster_node_pool" "this" {
   min_count             = var.min_count
   name                  = var.name
   node_count            = var.node_count
+  node_labels           = var.node_labels
   node_taints           = var.node_taints
   os_disk_size_gb       = var.os_disk_size_gb
   os_type               = var.os_type
+  tags                  = var.tags
   vm_size               = var.vm_size
   vnet_subnet_id        = var.vnet_subnet_id
 

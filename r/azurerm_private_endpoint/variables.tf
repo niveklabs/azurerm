@@ -25,6 +25,7 @@ variable "private_service_connection" {
       is_manual_connection           = bool
       name                           = string
       private_connection_resource_id = string
+      private_ip_address             = string
       request_message                = string
       subresource_names              = list(string)
     }

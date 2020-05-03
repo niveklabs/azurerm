@@ -1,5 +1,5 @@
 module "azurerm_postgresql_server" {
-  source = "./azurerm/r/azurerm_postgresql_server"
+  source = "./modules/azurerm/r/azurerm_postgresql_server"
 
   administrator_login          = null
   administrator_login_password = null

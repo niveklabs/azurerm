@@ -1,5 +1,5 @@
 module "azurerm_image" {
-  source = "./azurerm/r/azurerm_image"
+  source = "./modules/azurerm/r/azurerm_image"
 
   hyper_v_generation        = null
   location                  = null

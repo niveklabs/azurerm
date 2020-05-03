@@ -1,5 +1,5 @@
 module "azurerm_data_lake_store_file" {
-  source = "./azurerm/r/azurerm_data_lake_store_file"
+  source = "./modules/azurerm/r/azurerm_data_lake_store_file"
 
   account_name     = null
   local_file_path  = null

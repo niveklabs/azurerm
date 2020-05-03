@@ -1,5 +1,5 @@
 module "azurerm_iothub_endpoint_eventhub" {
-  source = "./azurerm/r/azurerm_iothub_endpoint_eventhub"
+  source = "./modules/azurerm/r/azurerm_iothub_endpoint_eventhub"
 
   connection_string   = null
   iothub_name         = null

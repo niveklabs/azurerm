@@ -1,5 +1,5 @@
 module "azurerm_netapp_snapshot" {
-  source = "./azurerm/d/azurerm_netapp_snapshot"
+  source = "./modules/azurerm/d/azurerm_netapp_snapshot"
 
   account_name        = null
   name                = null

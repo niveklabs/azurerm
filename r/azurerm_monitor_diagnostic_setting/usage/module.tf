@@ -1,5 +1,5 @@
 module "azurerm_monitor_diagnostic_setting" {
-  source = "./azurerm/r/azurerm_monitor_diagnostic_setting"
+  source = "./modules/azurerm/r/azurerm_monitor_diagnostic_setting"
 
   eventhub_authorization_rule_id = null
   eventhub_name                  = null

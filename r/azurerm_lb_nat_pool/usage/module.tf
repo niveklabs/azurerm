@@ -1,5 +1,5 @@
 module "azurerm_lb_nat_pool" {
-  source = "./azurerm/r/azurerm_lb_nat_pool"
+  source = "./modules/azurerm/r/azurerm_lb_nat_pool"
 
   backend_port                   = null
   frontend_ip_configuration_name = null

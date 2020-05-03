@@ -1,5 +1,5 @@
 module "azurerm_network_security_rule" {
-  source = "./azurerm/r/azurerm_network_security_rule"
+  source = "./modules/azurerm/r/azurerm_network_security_rule"
 
   access                                     = null
   description                                = null

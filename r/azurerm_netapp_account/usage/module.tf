@@ -1,9 +1,10 @@
 module "azurerm_netapp_account" {
-  source = "./azurerm/r/azurerm_netapp_account"
+  source = "./modules/azurerm/r/azurerm_netapp_account"
 
   location            = null
   name                = null
   resource_group_name = null
+  tags                = {}
 
   active_directory = [{
     dns_servers         = []

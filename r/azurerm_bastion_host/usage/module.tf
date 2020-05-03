@@ -1,5 +1,5 @@
 module "azurerm_bastion_host" {
-  source = "./azurerm/r/azurerm_bastion_host"
+  source = "./modules/azurerm/r/azurerm_bastion_host"
 
   location            = null
   name                = null

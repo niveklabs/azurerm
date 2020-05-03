@@ -1,5 +1,5 @@
 module "azurerm_lb_backend_address_pool" {
-  source = "./azurerm/r/azurerm_lb_backend_address_pool"
+  source = "./modules/azurerm/r/azurerm_lb_backend_address_pool"
 
   loadbalancer_id     = null
   name                = null

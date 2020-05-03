@@ -1,5 +1,5 @@
 module "azurerm_cdn_profile" {
-  source = "./azurerm/r/azurerm_cdn_profile"
+  source = "./modules/azurerm/r/azurerm_cdn_profile"
 
   location            = null
   name                = null

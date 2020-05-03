@@ -1,5 +1,5 @@
 module "azurerm_sql_failover_group" {
-  source = "./azurerm/r/azurerm_sql_failover_group"
+  source = "./modules/azurerm/r/azurerm_sql_failover_group"
 
   databases           = []
   name                = null

@@ -1,5 +1,5 @@
 module "azurerm_lb_outbound_rule" {
-  source = "./azurerm/r/azurerm_lb_outbound_rule"
+  source = "./modules/azurerm/r/azurerm_lb_outbound_rule"
 
   allocated_outbound_ports = null
   backend_address_pool_id  = null

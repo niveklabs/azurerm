@@ -1,5 +1,5 @@
 module "azurerm_subnet" {
-  source = "./azurerm/d/azurerm_subnet"
+  source = "./modules/azurerm/d/azurerm_subnet"
 
   name                 = null
   resource_group_name  = null

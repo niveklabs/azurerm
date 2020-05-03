@@ -1,5 +1,5 @@
 module "azurerm_site_recovery_replication_policy" {
-  source = "./azurerm/r/azurerm_site_recovery_replication_policy"
+  source = "./modules/azurerm/r/azurerm_site_recovery_replication_policy"
 
   application_consistent_snapshot_frequency_in_minutes = null
   name                                                 = null

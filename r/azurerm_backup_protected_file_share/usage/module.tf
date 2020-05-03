@@ -1,5 +1,5 @@
 module "azurerm_backup_protected_file_share" {
-  source = "./azurerm/r/azurerm_backup_protected_file_share"
+  source = "./modules/azurerm/r/azurerm_backup_protected_file_share"
 
   backup_policy_id          = null
   recovery_vault_name       = null

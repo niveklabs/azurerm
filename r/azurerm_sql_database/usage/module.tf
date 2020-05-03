@@ -1,5 +1,5 @@
 module "azurerm_sql_database" {
-  source = "./azurerm/r/azurerm_sql_database"
+  source = "./modules/azurerm/r/azurerm_sql_database"
 
   collation                        = null
   create_mode                      = null
@@ -7,6 +7,7 @@ module "azurerm_sql_database" {
   elastic_pool_name                = null
   location                         = null
   max_size_bytes                   = null
+  max_size_gb                      = null
   name                             = null
   read_scale                       = null
   requested_service_objective_id   = null

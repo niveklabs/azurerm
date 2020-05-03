@@ -33,6 +33,11 @@ output "location" {
   value       = data.azurerm_function_app.this.location
 }
 
+output "os_type" {
+  description = "returns a string"
+  value       = data.azurerm_function_app.this.os_type
+}
+
 output "outbound_ip_addresses" {
   description = "returns a string"
   value       = data.azurerm_function_app.this.outbound_ip_addresses

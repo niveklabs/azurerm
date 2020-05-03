@@ -1,5 +1,5 @@
 module "azurerm_security_center_contact" {
-  source = "./azurerm/r/azurerm_security_center_contact"
+  source = "./modules/azurerm/r/azurerm_security_center_contact"
 
   alert_notifications = null
   alerts_to_admins    = null

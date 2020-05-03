@@ -1,5 +1,5 @@
 module "azurerm_batch_account" {
-  source = "./azurerm/r/azurerm_batch_account"
+  source = "./modules/azurerm/r/azurerm_batch_account"
 
   location             = null
   name                 = null

@@ -1,5 +1,5 @@
 module "azurerm_cosmosdb_cassandra_keyspace" {
-  source = "./azurerm/r/azurerm_cosmosdb_cassandra_keyspace"
+  source = "./modules/azurerm/r/azurerm_cosmosdb_cassandra_keyspace"
 
   account_name        = null
   name                = null

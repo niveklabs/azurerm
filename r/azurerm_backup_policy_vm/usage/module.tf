@@ -1,5 +1,5 @@
 module "azurerm_backup_policy_vm" {
-  source = "./azurerm/r/azurerm_backup_policy_vm"
+  source = "./modules/azurerm/r/azurerm_backup_policy_vm"
 
   name                = null
   recovery_vault_name = null

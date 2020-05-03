@@ -1,5 +1,5 @@
 module "azurerm_lb" {
-  source = "./azurerm/r/azurerm_lb"
+  source = "./modules/azurerm/r/azurerm_lb"
 
   location            = null
   name                = null
@@ -15,6 +15,7 @@ module "azurerm_lb" {
     outbound_rules                = []
     private_ip_address            = null
     private_ip_address_allocation = null
+    private_ip_address_version    = null
     public_ip_address_id          = null
     public_ip_prefix_id           = null
     subnet_id                     = null

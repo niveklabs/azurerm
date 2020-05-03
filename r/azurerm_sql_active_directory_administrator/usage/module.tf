@@ -1,5 +1,5 @@
 module "azurerm_sql_active_directory_administrator" {
-  source = "./azurerm/r/azurerm_sql_active_directory_administrator"
+  source = "./modules/azurerm/r/azurerm_sql_active_directory_administrator"
 
   login               = null
   object_id           = null

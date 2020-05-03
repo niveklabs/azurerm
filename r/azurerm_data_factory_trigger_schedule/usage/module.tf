@@ -1,5 +1,5 @@
 module "azurerm_data_factory_trigger_schedule" {
-  source = "./azurerm/r/azurerm_data_factory_trigger_schedule"
+  source = "./modules/azurerm/r/azurerm_data_factory_trigger_schedule"
 
   annotations         = []
   data_factory_name   = null

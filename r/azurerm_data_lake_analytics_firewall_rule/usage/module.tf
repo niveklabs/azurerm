@@ -1,5 +1,5 @@
 module "azurerm_data_lake_analytics_firewall_rule" {
-  source = "./azurerm/r/azurerm_data_lake_analytics_firewall_rule"
+  source = "./modules/azurerm/r/azurerm_data_lake_analytics_firewall_rule"
 
   account_name        = null
   end_ip_address      = null

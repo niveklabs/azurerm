@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -12,6 +12,7 @@ resource "azurerm_automation_dsc_configuration" "this" {
   log_verbose             = var.log_verbose
   name                    = var.name
   resource_group_name     = var.resource_group_name
+  tags                    = var.tags
 
   dynamic "timeouts" {
     for_each = var.timeouts

@@ -1,5 +1,5 @@
 module "azurerm_linux_virtual_machine" {
-  source = "./azurerm/r/azurerm_linux_virtual_machine"
+  source = "./modules/azurerm/r/azurerm_linux_virtual_machine"
 
   admin_password                  = null
   admin_username                  = null

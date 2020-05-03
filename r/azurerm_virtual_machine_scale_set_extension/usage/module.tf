@@ -1,5 +1,5 @@
 module "azurerm_virtual_machine_scale_set_extension" {
-  source = "./azurerm/r/azurerm_virtual_machine_scale_set_extension"
+  source = "./modules/azurerm/r/azurerm_virtual_machine_scale_set_extension"
 
   auto_upgrade_minor_version   = null
   force_update_tag             = null

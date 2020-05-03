@@ -1,5 +1,5 @@
 module "azurerm_bot_channels_registration" {
-  source = "./azurerm/r/azurerm_bot_channels_registration"
+  source = "./modules/azurerm/r/azurerm_bot_channels_registration"
 
   developer_app_insights_api_key        = null
   developer_app_insights_application_id = null

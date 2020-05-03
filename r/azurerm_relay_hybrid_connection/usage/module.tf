@@ -1,5 +1,5 @@
 module "azurerm_relay_hybrid_connection" {
-  source = "./azurerm/r/azurerm_relay_hybrid_connection"
+  source = "./modules/azurerm/r/azurerm_relay_hybrid_connection"
 
   name                          = null
   relay_namespace_name          = null

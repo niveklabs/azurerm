@@ -1,5 +1,5 @@
 module "azurerm_eventhub" {
-  source = "./azurerm/r/azurerm_eventhub"
+  source = "./modules/azurerm/r/azurerm_eventhub"
 
   message_retention   = null
   name                = null

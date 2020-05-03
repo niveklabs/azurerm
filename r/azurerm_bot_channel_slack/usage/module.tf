@@ -1,5 +1,5 @@
 module "azurerm_bot_channel_slack" {
-  source = "./azurerm/r/azurerm_bot_channel_slack"
+  source = "./modules/azurerm/r/azurerm_bot_channel_slack"
 
   bot_name            = null
   client_id           = null

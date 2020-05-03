@@ -1,5 +1,5 @@
 module "azurerm_subscription" {
-  source = "./azurerm/d/azurerm_subscription"
+  source = "./modules/azurerm/d/azurerm_subscription"
 
   subscription_id = null
 

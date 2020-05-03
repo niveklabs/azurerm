@@ -1,5 +1,5 @@
 module "azurerm_site_recovery_fabric" {
-  source = "./azurerm/r/azurerm_site_recovery_fabric"
+  source = "./modules/azurerm/r/azurerm_site_recovery_fabric"
 
   location            = null
   name                = null

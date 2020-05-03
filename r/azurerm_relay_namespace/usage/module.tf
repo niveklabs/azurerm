@@ -1,5 +1,5 @@
 module "azurerm_relay_namespace" {
-  source = "./azurerm/r/azurerm_relay_namespace"
+  source = "./modules/azurerm/r/azurerm_relay_namespace"
 
   location            = null
   name                = null

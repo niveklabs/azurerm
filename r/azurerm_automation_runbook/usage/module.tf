@@ -1,5 +1,5 @@
 module "azurerm_automation_runbook" {
-  source = "./azurerm/r/azurerm_automation_runbook"
+  source = "./modules/azurerm/r/azurerm_automation_runbook"
 
   automation_account_name = null
   content                 = null

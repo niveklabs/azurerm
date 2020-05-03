@@ -1,3 +1,15 @@
+variable "enable_disk_encryption" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
+variable "enable_streaming_ingest" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "location" {
   description = "(required)"
   type        = string

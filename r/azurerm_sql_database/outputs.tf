@@ -38,6 +38,11 @@ output "max_size_bytes" {
   value       = azurerm_sql_database.this.max_size_bytes
 }
 
+output "max_size_gb" {
+  description = "returns a string"
+  value       = azurerm_sql_database.this.max_size_gb
+}
+
 output "requested_service_objective_id" {
   description = "returns a string"
   value       = azurerm_sql_database.this.requested_service_objective_id

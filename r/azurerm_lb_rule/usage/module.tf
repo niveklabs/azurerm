@@ -1,5 +1,5 @@
 module "azurerm_lb_rule" {
-  source = "./azurerm/r/azurerm_lb_rule"
+  source = "./modules/azurerm/r/azurerm_lb_rule"
 
   backend_address_pool_id        = null
   backend_port                   = null

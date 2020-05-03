@@ -1,5 +1,5 @@
 module "azurerm_storage_table" {
-  source = "./azurerm/r/azurerm_storage_table"
+  source = "./modules/azurerm/r/azurerm_storage_table"
 
   name                 = null
   storage_account_name = null

@@ -1,5 +1,5 @@
 module "azurerm_role_assignment" {
-  source = "./azurerm/r/azurerm_role_assignment"
+  source = "./modules/azurerm/r/azurerm_role_assignment"
 
   name                             = null
   principal_id                     = null

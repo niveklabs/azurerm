@@ -1,5 +1,5 @@
 module "azurerm_subnet" {
-  source = "./azurerm/r/azurerm_subnet"
+  source = "./modules/azurerm/r/azurerm_subnet"
 
   address_prefix                                 = null
   enforce_private_link_endpoint_network_policies = null

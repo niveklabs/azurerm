@@ -1,5 +1,5 @@
 module "azurerm_bot_channel_ms_teams" {
-  source = "./azurerm/r/azurerm_bot_channel_ms_teams"
+  source = "./modules/azurerm/r/azurerm_bot_channel_ms_teams"
 
   bot_name            = null
   calling_web_hook    = null

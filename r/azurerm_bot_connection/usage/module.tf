@@ -1,5 +1,5 @@
 module "azurerm_bot_connection" {
-  source = "./azurerm/r/azurerm_bot_connection"
+  source = "./modules/azurerm/r/azurerm_bot_connection"
 
   bot_name              = null
   client_id             = null

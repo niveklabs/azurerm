@@ -1,5 +1,5 @@
 module "azurerm_media_services_account" {
-  source = "./azurerm/r/azurerm_media_services_account"
+  source = "./modules/azurerm/r/azurerm_media_services_account"
 
   location            = null
   name                = null

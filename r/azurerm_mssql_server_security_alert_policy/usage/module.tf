@@ -1,5 +1,5 @@
 module "azurerm_mssql_server_security_alert_policy" {
-  source = "./azurerm/r/azurerm_mssql_server_security_alert_policy"
+  source = "./modules/azurerm/r/azurerm_mssql_server_security_alert_policy"
 
   disabled_alerts            = []
   email_account_admins       = null

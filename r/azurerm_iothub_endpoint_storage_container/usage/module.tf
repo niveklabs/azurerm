@@ -1,5 +1,5 @@
 module "azurerm_iothub_endpoint_storage_container" {
-  source = "./azurerm/r/azurerm_iothub_endpoint_storage_container"
+  source = "./modules/azurerm/r/azurerm_iothub_endpoint_storage_container"
 
   batch_frequency_in_seconds = null
   connection_string          = null

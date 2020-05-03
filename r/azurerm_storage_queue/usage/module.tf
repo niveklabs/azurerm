@@ -1,5 +1,5 @@
 module "azurerm_storage_queue" {
-  source = "./azurerm/r/azurerm_storage_queue"
+  source = "./modules/azurerm/r/azurerm_storage_queue"
 
   metadata             = {}
   name                 = null

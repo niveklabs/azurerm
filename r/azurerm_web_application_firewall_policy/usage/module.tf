@@ -1,5 +1,5 @@
 module "azurerm_web_application_firewall_policy" {
-  source = "./azurerm/r/azurerm_web_application_firewall_policy"
+  source = "./modules/azurerm/r/azurerm_web_application_firewall_policy"
 
   location            = null
   name                = null

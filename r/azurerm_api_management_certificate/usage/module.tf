@@ -1,5 +1,5 @@
 module "azurerm_api_management_certificate" {
-  source = "./azurerm/r/azurerm_api_management_certificate"
+  source = "./modules/azurerm/r/azurerm_api_management_certificate"
 
   api_management_name = null
   data                = null

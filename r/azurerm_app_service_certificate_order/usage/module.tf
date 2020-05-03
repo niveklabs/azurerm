@@ -1,5 +1,5 @@
 module "azurerm_app_service_certificate_order" {
-  source = "./azurerm/r/azurerm_app_service_certificate_order"
+  source = "./modules/azurerm/r/azurerm_app_service_certificate_order"
 
   auto_renew          = null
   csr                 = null

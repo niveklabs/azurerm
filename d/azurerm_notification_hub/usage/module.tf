@@ -1,5 +1,5 @@
 module "azurerm_notification_hub" {
-  source = "./azurerm/d/azurerm_notification_hub"
+  source = "./modules/azurerm/d/azurerm_notification_hub"
 
   name                = null
   namespace_name      = null

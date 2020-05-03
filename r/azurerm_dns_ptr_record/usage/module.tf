@@ -1,5 +1,5 @@
 module "azurerm_dns_ptr_record" {
-  source = "./azurerm/r/azurerm_dns_ptr_record"
+  source = "./modules/azurerm/r/azurerm_dns_ptr_record"
 
   name                = null
   records             = []

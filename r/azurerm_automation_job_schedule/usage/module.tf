@@ -1,5 +1,5 @@
 module "azurerm_automation_job_schedule" {
-  source = "./azurerm/r/azurerm_automation_job_schedule"
+  source = "./modules/azurerm/r/azurerm_automation_job_schedule"
 
   automation_account_name = null
   job_schedule_id         = null

@@ -1,5 +1,5 @@
 module "azurerm_kubernetes_cluster_node_pool" {
-  source = "./azurerm/r/azurerm_kubernetes_cluster_node_pool"
+  source = "./modules/azurerm/r/azurerm_kubernetes_cluster_node_pool"
 
   availability_zones    = []
   enable_auto_scaling   = null
@@ -10,9 +10,11 @@ module "azurerm_kubernetes_cluster_node_pool" {
   min_count             = null
   name                  = null
   node_count            = null
+  node_labels           = {}
   node_taints           = []
   os_disk_size_gb       = null
   os_type               = null
+  tags                  = {}
   vm_size               = null
   vnet_subnet_id        = null
 

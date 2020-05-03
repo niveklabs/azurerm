@@ -1,5 +1,5 @@
 module "azurerm_dev_test_virtual_network" {
-  source = "./azurerm/d/azurerm_dev_test_virtual_network"
+  source = "./modules/azurerm/d/azurerm_dev_test_virtual_network"
 
   lab_name            = null
   name                = null

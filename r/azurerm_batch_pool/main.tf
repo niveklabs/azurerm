@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -53,7 +53,8 @@ resource "azurerm_batch_pool" "this" {
   dynamic "network_configuration" {
     for_each = var.network_configuration
     content {
-      subnet_id = network_configuration.value["subnet_id"]
+      public_ips = network_configuration.value["public_ips"]
+      subnet_id  = network_configuration.value["subnet_id"]
 
       dynamic "endpoint_configuration" {
         for_each = network_configuration.value.endpoint_configuration

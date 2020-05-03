@@ -1,5 +1,5 @@
 module "azurerm_iothub_dps" {
-  source = "./azurerm/r/azurerm_iothub_dps"
+  source = "./modules/azurerm/r/azurerm_iothub_dps"
 
   location            = null
   name                = null

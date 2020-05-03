@@ -1,5 +1,5 @@
 module "azurerm_cognitive_account" {
-  source = "./azurerm/r/azurerm_cognitive_account"
+  source = "./modules/azurerm/r/azurerm_cognitive_account"
 
   kind                = null
   location            = null

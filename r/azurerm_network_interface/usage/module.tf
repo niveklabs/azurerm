@@ -1,5 +1,5 @@
 module "azurerm_network_interface" {
-  source = "./azurerm/r/azurerm_network_interface"
+  source = "./modules/azurerm/r/azurerm_network_interface"
 
   dns_servers                   = []
   enable_accelerated_networking = null

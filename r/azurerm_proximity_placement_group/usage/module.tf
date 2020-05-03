@@ -1,5 +1,5 @@
 module "azurerm_proximity_placement_group" {
-  source = "./azurerm/r/azurerm_proximity_placement_group"
+  source = "./modules/azurerm/r/azurerm_proximity_placement_group"
 
   location            = null
   name                = null

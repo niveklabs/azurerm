@@ -1,5 +1,5 @@
 module "azurerm_network_security_group" {
-  source = "./azurerm/r/azurerm_network_security_group"
+  source = "./modules/azurerm/r/azurerm_network_security_group"
 
   location            = null
   name                = null

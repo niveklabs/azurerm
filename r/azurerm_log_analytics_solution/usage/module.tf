@@ -1,5 +1,5 @@
 module "azurerm_log_analytics_solution" {
-  source = "./azurerm/r/azurerm_log_analytics_solution"
+  source = "./modules/azurerm/r/azurerm_log_analytics_solution"
 
   location              = null
   resource_group_name   = null

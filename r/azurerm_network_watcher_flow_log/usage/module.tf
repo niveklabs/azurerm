@@ -1,5 +1,5 @@
 module "azurerm_network_watcher_flow_log" {
-  source = "./azurerm/r/azurerm_network_watcher_flow_log"
+  source = "./modules/azurerm/r/azurerm_network_watcher_flow_log"
 
   enabled                   = null
   network_security_group_id = null
@@ -22,6 +22,7 @@ module "azurerm_network_watcher_flow_log" {
 
   traffic_analytics = [{
     enabled               = null
+    interval_in_minutes   = null
     workspace_id          = null
     workspace_region      = null
     workspace_resource_id = null

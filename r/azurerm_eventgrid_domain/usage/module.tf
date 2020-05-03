@@ -1,5 +1,5 @@
 module "azurerm_eventgrid_domain" {
-  source = "./azurerm/r/azurerm_eventgrid_domain"
+  source = "./modules/azurerm/r/azurerm_eventgrid_domain"
 
   input_schema        = null
   location            = null

@@ -1,5 +1,5 @@
 module "azurerm_servicebus_topic_authorization_rule" {
-  source = "./azurerm/r/azurerm_servicebus_topic_authorization_rule"
+  source = "./modules/azurerm/r/azurerm_servicebus_topic_authorization_rule"
 
   listen              = null
   manage              = null

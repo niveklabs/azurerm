@@ -1,5 +1,5 @@
 module "azurerm_eventhub_authorization_rule" {
-  source = "./azurerm/d/azurerm_eventhub_authorization_rule"
+  source = "./modules/azurerm/d/azurerm_eventhub_authorization_rule"
 
   eventhub_name       = null
   listen              = null

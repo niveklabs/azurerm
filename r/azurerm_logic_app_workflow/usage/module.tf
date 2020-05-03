@@ -1,5 +1,5 @@
 module "azurerm_logic_app_workflow" {
-  source = "./azurerm/r/azurerm_logic_app_workflow"
+  source = "./modules/azurerm/r/azurerm_logic_app_workflow"
 
   location            = null
   name                = null

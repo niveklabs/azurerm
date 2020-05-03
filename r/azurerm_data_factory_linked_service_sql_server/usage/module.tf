@@ -1,5 +1,5 @@
 module "azurerm_data_factory_linked_service_sql_server" {
-  source = "./azurerm/r/azurerm_data_factory_linked_service_sql_server"
+  source = "./modules/azurerm/r/azurerm_data_factory_linked_service_sql_server"
 
   additional_properties    = {}
   annotations              = []

@@ -1,5 +1,5 @@
 module "azurerm_vpn_server_configuration" {
-  source = "./azurerm/r/azurerm_vpn_server_configuration"
+  source = "./modules/azurerm/r/azurerm_vpn_server_configuration"
 
   location                 = null
   name                     = null

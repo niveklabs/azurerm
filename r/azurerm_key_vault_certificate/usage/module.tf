@@ -1,5 +1,5 @@
 module "azurerm_key_vault_certificate" {
-  source = "./azurerm/r/azurerm_key_vault_certificate"
+  source = "./modules/azurerm/r/azurerm_key_vault_certificate"
 
   key_vault_id = null
   name         = null

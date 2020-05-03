@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -11,6 +11,7 @@ resource "azurerm_netapp_pool" "this" {
   resource_group_name = var.resource_group_name
   service_level       = var.service_level
   size_in_tb          = var.size_in_tb
+  tags                = var.tags
 
   dynamic "timeouts" {
     for_each = var.timeouts

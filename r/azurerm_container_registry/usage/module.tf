@@ -1,5 +1,5 @@
 module "azurerm_container_registry" {
-  source = "./azurerm/r/azurerm_container_registry"
+  source = "./modules/azurerm/r/azurerm_container_registry"
 
   admin_enabled            = null
   georeplication_locations = []

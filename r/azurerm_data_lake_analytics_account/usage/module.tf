@@ -1,5 +1,5 @@
 module "azurerm_data_lake_analytics_account" {
-  source = "./azurerm/r/azurerm_data_lake_analytics_account"
+  source = "./modules/azurerm/r/azurerm_data_lake_analytics_account"
 
   default_store_account_name = null
   location                   = null

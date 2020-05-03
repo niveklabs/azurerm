@@ -1,5 +1,5 @@
 module "azurerm_firewall" {
-  source = "./azurerm/r/azurerm_firewall"
+  source = "./modules/azurerm/r/azurerm_firewall"
 
   location            = null
   name                = null

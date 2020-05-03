@@ -1,5 +1,5 @@
 module "azurerm_role_definition" {
-  source = "./azurerm/r/azurerm_role_definition"
+  source = "./modules/azurerm/r/azurerm_role_definition"
 
   assignable_scopes  = []
   description        = null

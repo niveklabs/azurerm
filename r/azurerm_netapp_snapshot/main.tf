@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.0.0"
+    azurerm = ">= 2.1.0"
   }
 }
 
@@ -10,6 +10,7 @@ resource "azurerm_netapp_snapshot" "this" {
   name                = var.name
   pool_name           = var.pool_name
   resource_group_name = var.resource_group_name
+  tags                = var.tags
   volume_name         = var.volume_name
 
   dynamic "timeouts" {

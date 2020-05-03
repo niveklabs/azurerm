@@ -1,5 +1,5 @@
 module "azurerm_mysql_virtual_network_rule" {
-  source = "./azurerm/r/azurerm_mysql_virtual_network_rule"
+  source = "./modules/azurerm/r/azurerm_mysql_virtual_network_rule"
 
   name                = null
   resource_group_name = null

@@ -1,5 +1,5 @@
 module "azurerm_virtual_hub" {
-  source = "./azurerm/r/azurerm_virtual_hub"
+  source = "./modules/azurerm/r/azurerm_virtual_hub"
 
   address_prefix      = null
   location            = null
