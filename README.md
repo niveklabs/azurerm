@@ -23,6 +23,20 @@ provider "azurerm" {
   use_msi                        = null
 
   features {
+
+
+    key_vault {
+      purge_soft_delete_on_destroy    = null
+      recover_soft_deleted_key_vaults = null
+    }
+
+    virtual_machine {
+      delete_os_disk_on_deletion = null
+    }
+
+    virtual_machine_scale_set {
+      roll_instances_when_required = null
+    }
   }
 }
 ```
