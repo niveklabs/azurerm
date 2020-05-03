@@ -1,6 +1,13 @@
 variable "group_id" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "name" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 
 variable "timeouts" {

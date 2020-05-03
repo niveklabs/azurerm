@@ -3,9 +3,19 @@ output "display_name" {
   value       = data.azurerm_management_group.this.display_name
 }
 
+output "group_id" {
+  description = "returns a string"
+  value       = data.azurerm_management_group.this.group_id
+}
+
 output "id" {
   description = "returns a string"
   value       = data.azurerm_management_group.this.id
+}
+
+output "name" {
+  description = "returns a string"
+  value       = data.azurerm_management_group.this.name
 }
 
 output "parent_management_group_id" {

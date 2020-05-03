@@ -10,6 +10,12 @@ variable "group_id" {
   default     = null
 }
 
+variable "name" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "parent_management_group_id" {
   description = "(optional)"
   type        = string

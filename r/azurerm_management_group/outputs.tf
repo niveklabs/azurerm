@@ -13,6 +13,11 @@ output "id" {
   value       = azurerm_management_group.this.id
 }
 
+output "name" {
+  description = "returns a string"
+  value       = azurerm_management_group.this.name
+}
+
 output "parent_management_group_id" {
   description = "returns a string"
   value       = azurerm_management_group.this.parent_management_group_id
