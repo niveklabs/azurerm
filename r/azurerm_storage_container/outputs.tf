@@ -18,6 +18,11 @@ output "metadata" {
   value       = azurerm_storage_container.this.metadata
 }
 
+output "resource_manager_id" {
+  description = "returns a string"
+  value       = azurerm_storage_container.this.resource_manager_id
+}
+
 output "this" {
   value = azurerm_storage_container.this
 }

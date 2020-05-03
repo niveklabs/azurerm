@@ -91,6 +91,18 @@ variable "certificate_common_names" {
   default = []
 }
 
+variable "client_certificate_common_name" {
+  description = "nested mode: NestingList, min items: 0, max items: 0"
+  type = set(object(
+    {
+      common_name       = string
+      is_admin          = bool
+      issuer_thumbprint = string
+    }
+  ))
+  default = []
+}
+
 variable "client_certificate_thumbprint" {
   description = "nested mode: NestingList, min items: 0, max items: 2"
   type = set(object(

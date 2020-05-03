@@ -49,7 +49,7 @@ variable "tags" {
 }
 
 variable "ipv4_firewall_rule" {
-  description = "nested mode: NestingList, min items: 0, max items: 0"
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(
     {
       name        = string

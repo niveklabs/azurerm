@@ -39,6 +39,12 @@ variable "monitor_config" {
   description = "nested mode: NestingList, min items: 1, max items: 1"
   type = set(object(
     {
+      custom_header = list(object(
+        {
+          name  = string
+          value = string
+        }
+      ))
       expected_status_code_ranges  = list(string)
       interval_in_seconds          = number
       path                         = string

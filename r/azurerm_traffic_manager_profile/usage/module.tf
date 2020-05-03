@@ -13,6 +13,10 @@ module "azurerm_traffic_manager_profile" {
   }]
 
   monitor_config = [{
+    custom_header = [{
+      name  = null
+      value = null
+    }]
     expected_status_code_ranges  = []
     interval_in_seconds          = null
     path                         = null

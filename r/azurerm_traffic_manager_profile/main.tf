@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.2.0"
+    azurerm = ">= 2.3.0"
   }
 }
 
@@ -29,6 +29,15 @@ resource "azurerm_traffic_manager_profile" "this" {
       protocol                     = monitor_config.value["protocol"]
       timeout_in_seconds           = monitor_config.value["timeout_in_seconds"]
       tolerated_number_of_failures = monitor_config.value["tolerated_number_of_failures"]
+
+      dynamic "custom_header" {
+        for_each = monitor_config.value.custom_header
+        content {
+          name  = custom_header.value["name"]
+          value = custom_header.value["value"]
+        }
+      }
+
     }
   }
 

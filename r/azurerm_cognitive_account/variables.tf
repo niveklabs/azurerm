@@ -13,6 +13,12 @@ variable "name" {
   type        = string
 }
 
+variable "qna_runtime_endpoint" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "resource_group_name" {
   description = "(required)"
   type        = string

@@ -32,6 +32,12 @@ module "azurerm_service_fabric_cluster" {
     x509_store_name = null
   }]
 
+  client_certificate_common_name = [{
+    common_name       = null
+    is_admin          = null
+    issuer_thumbprint = null
+  }]
+
   client_certificate_thumbprint = [{
     is_admin   = null
     thumbprint = null

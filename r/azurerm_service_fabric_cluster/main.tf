@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = ">= 2.2.0"
+    azurerm = ">= 2.3.0"
   }
 }
 
@@ -47,6 +47,15 @@ resource "azurerm_service_fabric_cluster" "this" {
         }
       }
 
+    }
+  }
+
+  dynamic "client_certificate_common_name" {
+    for_each = var.client_certificate_common_name
+    content {
+      common_name       = client_certificate_common_name.value["common_name"]
+      is_admin          = client_certificate_common_name.value["is_admin"]
+      issuer_thumbprint = client_certificate_common_name.value["issuer_thumbprint"]
     }
   }
 
